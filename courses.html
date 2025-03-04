@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YellowGap</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/YGDARKFAVICON.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/pageTransition.css">
+    <link rel="stylesheet" href="/assets/css/courses.css">
+       
+    
+</head>
+
+<body >
+    <div class="loader" >
+        <h1 class="text-center" data-aos="fade-up" data-aos-duration="1500"><i>Learn with us<br>we promise we’re not that boring</i></h1> &nbsp;&nbsp;
+        <!-- <h1 class="text-center" data-aos="fade-up" data-aos-duration="1100"><i>Courses </i></h1> -->
+    </div>
+    <a href="https://wa.me/918591113931?text=I%20would%20like%20to%20know%20more%20details%20about%20YellowGap%20Education%20Society" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+        </a>
+    <!-- <audio src="./assets/music/Sonny-Fodera-feat-Jazzy-DOD-Somedays-(RawPraise.ng).mp3" autoplay loop></audio> -->
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top" x-data="{ open: false }">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html" >
+                <img src="./assets/images/YGLOGO.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" @click="open = !open" :aria-expanded="open ? 'true' : 'false'" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" :class="{ 'show': open }" id="navbarNav">
+                <ul class="navbar-nav ms-auto sm-auto mt-4" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html" @click="open = !open">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html" @click="open = !open">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./courses.html" @click="open = !open">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./classroom.html" @click="open = !open">Classroom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./instructors.html" @click="open = !open">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./reviews.html" @click="open = !open">Reviews</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html" @click="open = !open">Contact</a>
+                    </li>
+                    <li>
+                    <!-- <a href="#contact" @click="open = false" class="btn btn-brand ms-lg-3 ">Book your slots</a> -->
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    
+    
+
+    <section id="quote" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div data-aos="zoom-in" data-aos-duration = "3000" class="col-12 text-center">
+                    <h1 > <span style="color: gold; text-shadow: 2px 2px 1px gray;">YellowGap</span> helps you go from coding noob to  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">Full-Stack</span> pro, no matter where you're starting! </h1>
+                </div>
+    
+                <div class="col-12 text-center mt-4" data-aos="fade-up" data-aos-duration="3000">
+                    <a href="https://wa.me/918591113931?text=I%20would%20like%20to%20know%20more%20details%20about%20YellowGap%20Education%20Society" class="btn btn-brand">Enroll Now</a> 
+                </div>
+    
+                <div class="col-12 text-center mt-4">
+                    <img src="./assets/ImagesUpdated/94.webp" alt="" class="img-fluid" data-aos="zoom-out" data-aos-delay="450">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quote" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div data-aos="zoom-in" data-aos-duration = "1000" class="col-12 text-center">
+                    <h1 >Level 1: Getting  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">started</span> with tech </h1>
+                </div>
+    
+               
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="timeline">
+        <div class="container">
+          <!--     ITEM 1  -->
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+      
+            <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+              <h2>Computer Basics</h2>
+              <p>Understand how your computer works, its components, and how to use them effectively.</p>
+            </div>
+          </div> 
+      
+          <!--     ITEM 2  -->
+           <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content " data-aos="fade-down" data-aos-duration = "1000">
+              <h2>Internet & Its Working</h2>
+              <p>Learn how the internet connects everything, from websites to online services, and how it all functions together.</p>
+            </div>
+          </div>   
+      
+          <!--     ITEM 1  -->
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+      
+            <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+              <h2>Web Development Basics</h2>
+              <p>Get hands-on with creating your first website. You’ll learn the basics of HTML, CSS, and how to make your pages look good and work properly.</p>
+            </div>
+          </div> 
+      
+          <!--     ITEM 2  -->
+           <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content " data-aos="fade-down" data-aos-duration = "1000">
+              <h2>Programming Fundamentals</h2>
+              <p>Start your coding journey by learning the fundamentals. You'll get familiar with basic programming concepts to build your first projects.</p>
+            </div>
+          </div>   
+
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+              <h2>Linux & Scripting</h2>
+              <p>Discover Linux, a powerful operating system used by professionals. Learn scripting to automate tasks and make your workflow more efficient.</p>
+            </div>
+          </div>   
+        </div>
+      </section>
+
+
+      <section id="quote" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div data-aos="zoom-in" data-aos-duration = "1000" class="col-12 text-center">
+                    <h1 >Level 2:  <span style="color: gold; text-shadow: 2px 2px 1px gray;">Expanding</span> Your Knowledge </h1>
+                </div>
+    
+               
+            </div>
+        </div>
+    </section>
+    
+    <section class="timeline">
+        <div class="container">
+            <!-- ITEM 1 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content" data-aos="zoom-in" data-aos-duration="1000">
+                    <h2>Frontend Development</h2>
+                    <p>Learn how to design beautiful, interactive websites using HTML, CSS, and JavaScript to create stunning front-end experiences.</p>
+                </div>
+            </div> 
+    
+            <!-- ITEM 2 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+                    <h2>Backend Development</h2>
+                    <p>Discover how websites work behind the scenes. Learn how to manage databases, servers, and APIs to deliver dynamic content.</p>
+                </div>
+            </div> 
+    
+            <!-- ITEM 3 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+                    <h2>Database Management</h2>
+                    <p>Learn how to organize, store, and retrieve data efficiently. Understand the basics of databases and how they power modern websites.</p>
+                </div>
+            </div>
+    
+            <!-- ITEM 4 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+                    <h2>Cloud & Hosting</h2>
+                    <p>Explore cloud platforms and how to host websites. Learn how to deploy your projects on the web and make them accessible to everyone.</p>
+                </div>
+            </div> 
+    
+            <!-- ITEM 5 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+                    <h2>Containerization</h2>
+                    <p>Learn how to use Docker to package your apps and their dependencies. Ensure consistency across different environments for smooth deployment.</p>
+                </div>
+            </div> 
+    
+            <!-- ITEM 6 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content " data-aos="fade-down" data-aos-duration = "1000">
+                    <h2>DevOps</h2>
+                    <p>Understand the collaboration between developers and operations. Learn automation tools to streamline building, testing, and deployment processes.</p>
+                </div>
+            </div>
+    
+            <!-- ITEM 7 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+                    <h2>Git, GitHub & Actions</h2>
+                    <p>Master version control with Git, collaborate on projects using GitHub, and automate your workflow with GitHub Actions to improve productivity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quote" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div data-aos="zoom-in" data-aos-duration = "1000" class="col-12 text-center">
+                    <h1 >Level 3: Mastering the  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">Craft</span> </h1>
+                </div>
+    
+               
+            </div>
+        </div>
+    </section>
+    
+    <section class="timeline">
+        <div class="container">
+            <!-- ITEM 1 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+                    <h2>APIs</h2>
+                    <p>Learn how APIs allow different applications to communicate with each other. Build and integrate APIs to enhance your projects functionality.</p>
+                </div>
+            </div> 
+    
+            <!-- ITEM 2 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+                    <h2>Data Structures & Algorithms (DSA)</h2>
+                    <p>Master key data structures and algorithms to optimize code for performance and tackle complex problems with ease.</p>
+                </div>
+            </div> 
+    
+            <!-- ITEM 3 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+                    <h2>Design Patterns</h2>
+                    <p>Learn about design patterns, the best practices for solving common coding problems. Use them to write efficient, maintainable code.</p>
+                </div>
+            </div>
+    
+            <!-- ITEM 4 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+                    <h2>Security</h2>
+                    <p>Learn the essential techniques to protect your websites and applications from security breaches. Safeguard sensitive data and prevent attacks.</p>
+                </div>
+            </div> 
+    
+            <!-- ITEM 5 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+                    <h2>Web Performance</h2>
+                    <p>Optimize your website’s speed and performance to ensure a seamless user experience. Improve load times and boost your site’s efficiency.</p>
+                </div>
+            </div> 
+    
+            <!-- ITEM 6 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+                    <h2>Accessibility</h2>
+                    <p>Make your website accessible to everyone, including users with disabilities. Follow accessibility best practices to ensure an inclusive design.</p>
+                </div>
+            </div>
+    
+            <!-- ITEM 7 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
+                    <h2>UI/UX Design</h2>
+                    <p>Learn the principles of user interface (UI) and user experience (UX) design to create intuitive, visually appealing websites and apps.</p>
+                </div>
+            </div> 
+    
+            <!-- ITEM 8 -->
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+                <div class="timeline-content " data-aos="fade-down" data-aos-duration = "1000">
+                    <h2>System Design</h2>
+                    <p>Learn how to design scalable, reliable systems. Understand architectural decisions that support growth, performance, and efficiency in large projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+      
+      
+    <section id="quote" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div data-aos="zoom-in" data-aos-duration = "1000" class="col-12 text-center">
+                    <h1 >If you're  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">curious</span> to learn more about  <span style="color: gold; text-shadow: 2px 2px 1px gray;">YellowGap</span> and how we can help you level up your  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">tech</span> skills, don't hesitate to  <span style="color: gold; text-shadow: 2px 2px 1px gray;">reach</span> out to us!</h1>
+                </div>
+    
+                <div class="col-12 text-center mt-4" data-aos="fade-up" data-aos-duration="3000">
+                    <a href="https://wa.me/918591113931?text=I%20would%20like%20to%20know%20more%20details%20about%20YellowGap%20Education%20Society" class="btn btn-brand">Enroll Now</a> 
+                </div>
+    
+                <div class="col-12 text-center mt-4">
+                    <img src="./assets/ImagesUpdated/42.webp" alt="" class="img-fluid" data-aos="zoom-out" data-aos-delay="450">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+  
+
+    
+
+        
+        
+    <div id="includeSlick"></div>       
+    <div id="includeFooter"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="module" src="./assets/js/email.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script>
+        $(function() {
+           $("#includeNavbar").load("/components/navbar.html");
+        });
+     </script>
+
+<script>
+    $(function() {
+       $("#includeFooter").load("/components/footer.html");
+    });
+ </script>
+<script>
+        $(function() {
+        $("#includeSlick").load("/components/slick.html");
+        });
+    </script>
+
+    
+
+</body>
+
+</html>

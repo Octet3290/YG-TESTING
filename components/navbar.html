@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg sticky-top" x-data="{ open: false }">
+    <div class="container">
+        <a class="navbar-brand" href="./index.html" >
+            <img src="./assets/images/YGLOGO.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" @click="open = !open" :aria-expanded="open ? 'true' : 'false'"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" :class="{ 'show': open }" id="navbarNav">
+            <ul class="navbar-nav ms-auto sm-auto mt-4">
+                <li class="nav-item">
+                    <div class="navigation">
+                    <a class="nav-link" href="/index.html" onClick=" onRouteClick('home'); return false; " @click="open = !open">Home</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="navigation">
+                    <a class="nav-link" href="./about.html" @click="open = !open">About</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./courses.html" @click="open = !open">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./classroom.html" @click="open = !open">Classroom</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./instructors.html" @click="open = !open">Faculty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./reviews.html" @click="open = !open">Reviews</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html" @click="open = !open">Contact</a>
+                </li>
+                <li>
+                    <!-- <a href="#contact" @click="open = false" class="btn btn-brand ms-lg-3 ">Book your slots</a> -->
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
