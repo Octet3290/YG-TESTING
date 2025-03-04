@@ -1,46 +1,177 @@
-<nav class="navbar navbar-expand-lg sticky-top" x-data="{ open: false }">
-    <div class="container">
-        <a class="navbar-brand" href="./index.html" >
-            <img src="./assets/images/YGLOGO.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" @click="open = !open" :aria-expanded="open ? 'true' : 'false'"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>YellowGap Navbar</title>
+    <style>
+        /* Custom animations and hover effects */
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #FFD700;
+            transition: width 0.3s ease-in-out;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .nav-link:hover {
+            transform: translateY(-3px);
+        }
+        /* Mobile menu background */
+        .mobile-menu-backdrop {
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav 
+        class="navbar fixed top-0 left-0 bg-white z-50 w-full shadow-sm" 
+        x-data="{ open: false }"
+    >
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo with hover effect -->
+            <a 
+                class="navbar-brand transform transition-transform hover:scale-105 flex-shrink-0" 
+                href="./index.html"
+            >
+                <img 
+                    src="./assets/images/YGLOGO.png" 
+                    alt="YellowGap Logo" 
+                    class="h-8 w-auto"
+                >
+            </a>
 
-        <div class="collapse navbar-collapse" :class="{ 'show': open }" id="navbarNav">
-            <ul class="navbar-nav ms-auto sm-auto mt-4">
-                <li class="nav-item">
-                    <div class="navigation">
-                    <a class="nav-link" href="/index.html" onClick=" onRouteClick('home'); return false; " @click="open = !open">Home</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="navigation">
-                    <a class="nav-link" href="./about.html" @click="open = !open">About</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./courses.html" @click="open = !open">Courses</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./classroom.html" @click="open = !open">Classroom</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./instructors.html" @click="open = !open">Faculty</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./reviews.html" @click="open = !open">Reviews</a>
-                </li>
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="/index.html" class="nav-link text-lg font-medium text-black px-3 py-2 rounded-lg transition-all duration-300 hover:bg-yellow-100">Home</a>
+                <a href="./about.html" class="nav-link text-lg font-medium text-black px-3 py-2 rounded-lg transition-all duration-300 hover:bg-yellow-100">About</a>
+                <a href="./courses.html" class="nav-link text-lg font-medium text-black px-3 py-2 rounded-lg transition-all duration-300 hover:bg-yellow-100">Courses</a>
+                <a href="./classroom.html" class="nav-link text-lg font-medium text-black px-3 py-2 rounded-lg transition-all duration-300 hover:bg-yellow-100">Classroom</a>
+                <a href="./instructors.html" class="nav-link text-lg font-medium text-black px-3 py-2 rounded-lg transition-all duration-300 hover:bg-yellow-100">Faculty</a>
+                <a href="./reviews.html" class="nav-link text-lg font-medium text-black px-3 py-2 rounded-lg transition-all duration-300 hover:bg-yellow-100">Reviews</a>
+                <a href="./contact.html" class="nav-link text-lg font-medium text-black px-3 py-2 rounded-lg transition-all duration-300 hover:bg-yellow-100">Contact</a>
+            </div>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html" @click="open = !open">Contact</a>
-                </li>
-                <li>
-                    <!-- <a href="#contact" @click="open = false" class="btn btn-brand ms-lg-3 ">Book your slots</a> -->
-                </li>
-            </ul>
+            <!-- Mobile Hamburger Button -->
+            <button 
+                class="lg:hidden hamburger-button z-50 relative w-8 h-6 focus:outline-none flex flex-col justify-between"
+                @click="open = !open"
+                :aria-expanded="open ? 'true' : 'false'"
+                aria-label="Toggle navigation"
+            >
+                <span 
+                    class="hamburger-line h-0.5 w-6 bg-black transform transition duration-300"
+                    :class="{
+                        'rotate-45 translate-y-2': open,
+                        'translate-y-0': !open
+                    }"
+                ></span>
 
+                <span 
+                    class="hamburger-line h-0.5 w-6 bg-black transform transition duration-300"
+                    :class="{
+                        'opacity-0': open,
+                        'opacity-100': !open
+                    }"
+                ></span>
+
+                <span 
+                    class="hamburger-line h-0.5 w-6 bg-black transform transition duration-300"
+                    :class="{
+                        '-rotate-45 -translate-y-2': open,
+                        'translate-y-0': !open
+                    }"
+                ></span>
+            </button>
+
+            <!-- Mobile Navigation Menu -->
+            <div 
+                class="fixed lg:hidden inset-0 transform transition-transform duration-300 translate-x-full mobile-menu-backdrop"
+                :class="{
+                    'translate-x-full': !open,
+                    'translate-x-0': open
+                }"
+            >
+                <ul 
+                    class="flex flex-col justify-center items-center h-full space-y-6 text-center px-4 pt-20"
+                >
+                    <li class="nav-item w-full">
+                        <a 
+                            class="nav-link block text-lg font-medium text-black px-3 py-2 rounded-lg transition-all duration-300 hover:bg-yellow-100"
+                            href="/index.html" 
+                            @click="open = false"
+                        >
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item w-full">
+                        <a 
+                            class="nav-link block text-lg font-medium text-black px-3 py-2 rounded-lg transition-all duration-300 hover:bg-yellow-100"
+                            href="./about.html" 
+                            @click="open = false"
+                        >
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item w-full">
+                        <a 
+                            class="nav-link block text-lg font-medium text-black px-3 py-2 rounded-lg transition-all duration-300 hover:bg-yellow-100"
+                            href="./courses.html" 
+                            @click="open = false"
+                        >
+                            Courses
+                        </a>
+                    </li>
+                    <li class="nav-item w-full">
+                        <a 
+                            class="nav-link block text-lg font-medium text-black px-3 py-2 rounded-lg transition-all duration-300 hover:bg-yellow-100"
+                            href="./classroom.html" 
+                            @click="open = false"
+                        >
+                            Classroom
+                        </a>
+                    </li>
+                    <li class="nav-item w-full">
+                        <a 
+                            class="nav-link block text-lg font-medium text-black px-3 py-2 rounded-lg transition-all duration-300 hover:bg-yellow-100"
+                            href="./instructors.html" 
+                            @click="open = false"
+                        >
+                            Faculty
+                        </a>
+                    </li>
+                    <li class="nav-item w-full">
+                        <a 
+                            class="nav-link block text-lg font-medium text-black px-3 py-2 rounded-lg transition-all duration-300 hover:bg-yellow-100"
+                            href="./reviews.html" 
+                            @click="open = false"
+                        >
+                            Reviews
+                        </a>
+                    </li>
+                    <li class="nav-item w-full">
+                        <a 
+                            class="nav-link block text-lg font-medium text-black px-3 py-2 rounded-lg transition-all duration-300 hover:bg-yellow-100"
+                            href="./contact.html" 
+                            @click="open = false"
+                        >
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</body>
+</html>
