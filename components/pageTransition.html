@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<div id="includeTransition"></div>
+
+
+
+<body>
+    <style>
+        /* Fullscreen loader */
+        .loader {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 1.5s ease-in-out;
+        }
+    
+        /* Logo Container */
+        .logo-container {
+            position: relative;
+            width: 75px;
+            height: 102px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        /* L-shapes */
+        .l-shape {
+            position: absolute;
+            width: 35px;
+            height: 49px;
+            background: transparent;
+        }
+    
+        /* Each L shape styling */
+        .l-shape::before, .l-shape::after {
+            content: "";
+            position: absolute;
+            background: rgba(253, 225, 91, 255);
+        }
+    
+        /* Vertical part of L */
+        .l-shape::before {
+            width: 20px;
+            height: 100%;
+        }
+    
+        /* Horizontal part of L */
+        .l-shape::after {
+            width: 100%;
+            height: 12px;
+        }
+    
+        /* Positioning */
+        .top-left { top: 0; left: 0; }
+        .top-left::before { left: 0; }
+        .top-left::after { top: 0; }
+    
+        .top-right { top: 0; right: 0; }
+        .top-right::before { right: 0; }
+        .top-right::after { top: 0; }
+    
+        .bottom-left { bottom: 0; left: 0; }
+        .bottom-left::before { left: 0; }
+        .bottom-left::after { bottom: 0; }
+    
+        .bottom-right { bottom: 0; right: 0; }
+        .bottom-right::before { right: 0; }
+        .bottom-right::after { bottom: 0; }
+    
+        /* Animation for each L shape entering */
+        @keyframes square-in-top-left {
+            from { clip-path: inset(100% 0 0 100%); opacity: 0; }
+            to { clip-path: inset(0 0 0 0); opacity: 1; }
+        }
+    
+        @keyframes square-in-top-right {
+            from { clip-path: inset(100% 100% 0 0); opacity: 0; }
+            to { clip-path: inset(0 0 0 0); opacity: 1; }
+        }
+    
+        @keyframes square-in-bottom-left {
+            from { clip-path: inset(0 0 100% 100%); opacity: 0; }
+            to { clip-path: inset(0 0 0 0); opacity: 1; }
+        }
+    
+        @keyframes square-in-bottom-right {
+            from { clip-path: inset(0 100% 100% 0); opacity: 0; }
+            to { clip-path: inset(0 0 0 0); opacity: 1; }
+        }
+    
+        .top-left { animation: square-in-top-left 1.2s ease-out forwards 0.2s; }
+        .top-right { animation: square-in-top-right 1.2s ease-out forwards 0.4s; }
+        .bottom-left { animation: square-in-bottom-left 1.2s ease-out forwards 0.6s; }
+        .bottom-right { animation: square-in-bottom-right 1.2s ease-out forwards 0.8s; }
+    
+        /* Zoom effect */
+        /* @keyframes zoomOut {
+            from { transform: scale(1); opacity: 1; }
+            to { transform: scale(40); opacity: 0; background: rgba(253, 225, 91, 255); }
+        }
+    
+        #preloader.zoom-animation {
+            animation: zoomOut 1.5s ease-in-out forwards;
+        } */
+    
+        /* Hide preloader after animation */
+        .fade-out {
+            animation: fade-out 0.8s ease-in-out forwards;
+        }
+    
+        @keyframes fade-out {
+            from { opacity: 1; }
+            to { opacity: 0; visibility: hidden; }
+        }
+    </style>
+
+    <div class="loader" id="preloader" >
+        <div class="logo-container" id="logo">
+            <div class="l-shape top-left"></div>
+            <div class="l-shape top-right"></div>
+            <div class="l-shape bottom-left"></div>
+            <div class="l-shape bottom-right"></div>
+        </div>
+    </div>
+
+    
+ 
+
+</body>
+
+
+</html>

@@ -1,58 +1,111 @@
-
-
-
-
-  
-  .loader {
-    position: fixed; 
-    inset: 0; 
-    z-index: 9999;
-    background: linear-gradient(315deg, rgb(229, 204, 13) 3%, rgb(249, 215, 44) 38%, rgb(252, 244, 14) 68%, rgb(255, 189, 6) 98%);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
-    transform: translatex(0%);
-    transition: transform 2.8s cubic-bezier(0.76, 0, 0.24, 1) 1.5s; 
-    will-change: transform;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%; 
-    height: 100%; 
-    
-  }
-  .loader h1{
-    font-size: 32px; 
-  }
-
-@media (max-width: 486px) {
-  .loader h1 {
-      font-size: 19px; 
-  }
-
+/* Fullscreen loader */
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1.5s ease-in-out;
 }
 
-@media (min-width: 487px) and (max-width: 768px) {
-  .loader h1 {
-      font-size: 27px; 
-  }
+/* Logo Container */
+.logo-container {
+  position: relative;
+  width: 75px; 
+  height: 102px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-@media (min-width: 769px) and (max-width: 1038px) {
-  .loader h1 {
-      font-size: 32px; 
-  }
-
-
+/* L-shapes */
+.l-shape {
+  position: absolute;
+  width: 35px;
+  height: 49px;
+  background: transparent;
 }
-  
-  .disable-hover,
-  .disable-hover * {
-    pointer-events: none !important;
-    cursor: none;
-    cursor: wait;
-  }
 
- 
+/* Each L shape styling */
+.l-shape::before, .l-shape::after {
+  content: "";
+  position: absolute;
+  background: rgba(253, 225, 91, 255);
+}
+
+/* Vertical part of L */
+.l-shape::before {
+  width: 20px;
+  height: 100%;
+}
+
+/* Horizontal part of L */
+.l-shape::after {
+  width: 100%;
+  height: 12px;
+}
+
+/* Positioning */
+.top-left { top: 0; left: 0; }
+.top-left::before { left: 0; }
+.top-left::after { top: 0; }
+
+.top-right { top: 0; right: 0; }
+.top-right::before { right: 0; }
+.top-right::after { top: 0; }
+
+.bottom-left { bottom: 0; left: 0; }
+.bottom-left::before { left: 0; }
+.bottom-left::after { bottom: 0; }
+
+.bottom-right { bottom: 0; right: 0; }
+.bottom-right::before { right: 0; }
+.bottom-right::after { bottom: 0; }
+
+/* Animation for each L shape entering */
+@keyframes square-in-top-left {
+from { clip-path: inset(100% 0 0 100%); opacity: 0; }
+  to { clip-path: inset(0 0 0 0); opacity: 1; }
+}
+
+@keyframes square-in-top-right {
+  from { clip-path: inset(100% 100% 0 0); opacity: 0; }
+  to { clip-path: inset(0 0 0 0); opacity: 1; }
+}
+
+@keyframes square-in-bottom-left {
+  from { clip-path: inset(0 0 100% 100%); opacity: 0; }
+  to { clip-path: inset(0 0 0 0); opacity: 1; }
+}
+
+@keyframes square-in-bottom-right {
+from { clip-path: inset(0 100% 100% 0); opacity: 0; }
+  to { clip-path: inset(0 0 0 0); opacity: 1; }
+}
+
+.top-left { animation: square-in-top-left 1.2s ease-out forwards 0.2s; }
+.top-right { animation: square-in-top-right 1.2s ease-out forwards 0.4s; }
+.bottom-left { animation: square-in-bottom-left 1.2s ease-out forwards 0.6s; }
+.bottom-right { animation: square-in-bottom-right 1.2s ease-out forwards 0.8s; }
+
+/* Zoom effect */
+@keyframes zoom-out {
+  from { transform: scale(1); }
+  to { transform: scale(40); background: rgba(253, 225, 91, 255); }
+}
+
+.zoom-animation {
+  animation: zoom-out 1.5s ease-in-out forwards 1.8s;
+}
+
+/* Hide preloader after animation */
+@keyframes fade-out {
+from { opacity: 1; }
+  to { opacity: 0; visibility: hidden; }
+}
+
+.fade-out {
+  animation: fade-out 0.8s ease-in-out forwards 3.3s;
+}
