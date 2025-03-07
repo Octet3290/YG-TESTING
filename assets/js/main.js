@@ -37,6 +37,26 @@ startTransition();
 });
 
 
+// let lastScrollY = window.scrollY;
+// const navbar = document.getElementById("navbar");
 
+// window.addEventListener("scroll", () => {
+//     let currentScrollY = window.scrollY;
+
+//     if (currentScrollY > lastScrollY && currentScrollY > 50) {
+//         // Scrolling Down → Hide Navbar
+//         navbar.style.transform = "translateY(-100%)";
+//     } else if (currentScrollY < lastScrollY) {
+//         // Scrolling Up → Show Navbar
+//         navbar.style.transform = "translateY(0)";
+
+//         // If the user is far from the top, bring them back to the top
+//         if (currentScrollY > window.innerHeight) {
+//             window.scrollTo({ top: 0, behavior: "smooth" });
+//         }
+//     }
+
+//     lastScrollY = currentScrollY;
+// });
 
 

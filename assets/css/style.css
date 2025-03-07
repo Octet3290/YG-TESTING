@@ -23,9 +23,10 @@ body {
     line-height: 1.7;
     color: var(--c-body);
     overflow-x: hidden  ;
-    background: #FDF9F4;
+    background: #ffffff;
     line-height: 1;
     letter-spacing: -1px;
+    position: relative;
 
 }
 
@@ -417,12 +418,14 @@ a:hover {
 
 
 /* BTN */
+
 .btn {
     font-weight: 700;
     font-size: 30px;
     /* text-transform: ; */
     padding: 22px 34px;
     border-radius: 13px;
+
 }
 
 .btn-brand {
