@@ -422,36 +422,7 @@
         });
     </script>
 
-    </script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetch("components/pageTransition.html")
-                .then(response => response.text())
-                .then(html => {
-                    document.getElementById("preloader").innerHTML = html;
-
-                    // Ensure the preloader is in the DOM before running pageTransition.js
-                    const checkPreloader = setInterval(() => {
-                        if (document.getElementById("preloader")) {
-                            clearInterval(checkPreloader);
-
-                            // Now load the script
-                            const script = document.createElement("script");
-                            script.src = "components/pageTransition.js";
-                            script.onload = function () {
-                                console.log("pageTransition.js loaded successfully.");
-                            };
-                            script.onerror = function () {
-                                console.error("Failed to load pageTransition.js.");
-                            };
-                            document.body.appendChild(script);
-                        }
-                    }, 100); // Check every 100ms
-                })
-                .catch(error => console.error("Error loading preloader:", error));
-        });
-    </script>
     <script>
         $(function() {
            $("#includeTransition").load("/components/pageTransition.html");
