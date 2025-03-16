@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Collage</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 5px;
+            width: 400px;
+            height: 400px;
+        }
+
+        /* IMAGE ZOOM */
+        .image-zoom {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-zoom-wrapper {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-zoom-wrapper img {
+            transition: 0.3s ease-in-out;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-zoom:hover .image-zoom-wrapper img {
+            transform: scale(1.1);
+        }
+
+        /* ICONBOX */
+        .iconbox {
+            background-color: #502C9D;
+            color: white;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+
+        .portfolio-item:hover .iconbox {
+            opacity: 1;
+            top: 50%;
+        }
+
+        /* Wide & Tall Image Adjustments */
+        .wide {
+            grid-column: span 2;
+        }
+
+        .tall {
+            grid-row: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="collage">
+        <div class="portfolio-item image-zoom">
+            <div class="image-zoom-wrapper">
+                <img src="./assets/images/portfolio.jpg" alt="">
+            </div>
+            <div class="iconbox"><i class="ri-search-2-line"></i></div>
+        </div>
+
+        <div class="portfolio-item image-zoom wide">
+            <div class="image-zoom-wrapper">
+                <img src="./assets/images/portfolio3.jpg" alt="">
+            </div>
+            <div class="iconbox"><i class="ri-search-2-line"></i></div>
+        </div>
+
+        <div class="portfolio-item image-zoom">
+            <div class="image-zoom-wrapper">
+                <img src="./assets/images/portfolio4.jpg" alt="">
+            </div>
+            <div class="iconbox"><i class="ri-search-2-line"></i></div>
+        </div>
+
+        <div class="portfolio-item image-zoom">
+            <div class="image-zoom-wrapper">
+                <img src="./assets/images/portfolio5.jpg" alt="">
+            </div>
+            <div class="iconbox"><i class="ri-search-2-line"></i></div>
+        </div>
+
+        <div class="portfolio-item image-zoom tall">
+            <div class="image-zoom-wrapper">
+                <img src="./assets/images/portfolio6.jpg" alt="">
+            </div>
+            <div class="iconbox"><i class="ri-search-2-line"></i></div>
+        </div>
+
+        <div class="portfolio-item image-zoom">
+            <div class="image-zoom-wrapper">
+                <img src="./assets/images/portfolio7.jpg" alt="">
+            </div>
+            <div class="iconbox"><i class="ri-search-2-line"></i></div>
+        </div>
+    </div>
+</body>
+</html>

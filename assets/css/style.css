@@ -25,26 +25,515 @@ body {
     overflow-x: hidden  ;
     background: #FDF9F4;
     line-height: 1;
-    letter-spacing: -1px;
-
+    letter-spacing: -0.7px;
+    
 }
 
 h1{
-    font-weight: 700;
     color: var(--c-dark);
     line-height: 1.3;
     letter-spacing: -1px;
+}
+
+
+
+
+
+
+h2{
+    font-weight: 350;
+    color: var(--c-dark);
+    /* line-height: 1.3;  */
+    letter-spacing: -1px;
     
 }
-h2{
+
+/*Newly added below*/
+#subheading{   /*For subheadings with big center texts*/
     font-weight: 500;
- 
+    color: var(--c-dark);
+    line-height: 1.3;
+    letter-spacing: -1px;
+    text-align: center;
+    /* margin-top: -75px; */
+}
+
+#names{
+    font-weight: 450;
+    color: var(--c-dark);
+    line-height: 1.3;
+    letter-spacing: -1px;
+    text-align: left;
+    margin-top: -115px;
+
+}
+
+#detes{   /*For titles of descriptions that are left-aligned*/
+    font-size: 70px;
+    font-weight: 500;
+    text-align: left;
+    color: var(--c-dark);
+    /* line-height: 1.3; */
+    letter-spacing: -2.4 px;
+    /* margin-top: -100px; */
+}
+
+#detes-spec{
+    font-weight: 500;
+    text-align: center;
+    color: var(--c-dark);
+    /* line-height: 1.3; */
+    letter-spacing: -2.4 px;
+}
+
+#detes-spec2{
+    font-size: 48px;
+    font-weight: 500;
+    text-align: left;
     color: var(--c-dark);
     /* line-height: 1.3; */
     letter-spacing: -2.4 px;
     
 }
 
+#detes-spec3{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+    color: var(--c-dark);
+    /* line-height: 1.3; */
+    letter-spacing: -2.4 px;
+    
+}
+
+#review-card {
+    font-size: 20px;
+    columns: gray;
+}
+
+.carousel-container { 
+    width: 600px; 
+    overflow: hidden; 
+    position: relative; 
+    /* border: 2px solid #333;  */
+    border-radius: 10px; 
+}
+
+.inst-caro-item { 
+    min-width: 100%; 
+    padding: 20px;  
+}
+
+.carousel-content { 
+    display: flex; 
+    transition: transform 0.75s ease-in-out; 
+}
+
+.controls {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 10px; 
+}
+
+
+.ab-carousel-container {
+    width: 100%;
+    height: 600px; /* Taller container for spacing */
+    overflow: hidden;
+    /* position: relative; */
+    border-radius: 20px;
+    /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); */
+    display: flex;
+    align-items: center; 
+}
+
+.ab-carousel-content {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    
+}
+
+.ab-carousel-item {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 56px;
+    min-width: 30%;
+    background-color: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    height: 450px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 15px;
+    transition: transform 0.75s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.ab-carousel-item:hover {
+    /* transform: translateY(-10px); */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    transform: rotateY(180deg);
+
+}
+
+.top-content {
+    position: relative;
+    top: 160px;  
+    backface-visibility: hidden;
+}
+
+.bottom-content {
+    padding: 50px;
+    font-size: 0.7rem;
+    color: #555;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    margin-top: -200px;
+    
+}
+
+.instructor-img {
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    margin-right: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.instructor-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+}
+
+.timeline-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;  /* Ensures timeline is centered */
+}
+
+.timeline-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.progress-path {
+    width: 105%;
+    height: 6px;
+    background: #502C9D;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.progress-glow {
+    height: 6px;
+    width: 0%;
+    background: linear-gradient(90deg, gold, gold);
+    border-radius: 3px;
+    transition: width 0.5s ease;
+}
+
+.milestone {
+    position: absolute;
+    top: -25px;   
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: gold;
+    border: 3px solid #502C9D;
+    color: #502C9D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    text-align: center;
+}
+
+.milestone:hover {
+    transform: scale(1.2);
+    background-color: #502C9D;
+    color: #fff;
+}
+
+.info-box {
+    background-color: #fff;
+    color: #502C9D;
+    border: 3px solid gold;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    height: 200px;  
+    box-sizing: border-box;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.info-box h3 {
+    margin: 0 0 5px;
+    font-size: 2.5rem;
+    color: #502C9D;
+}
+
+.info-box p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .milestone {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        top: -12px;
+        font-size: 0.9rem;
+    }
+
+    .info-box h3 {
+        font-size: 1.2rem;
+    }
+
+    .info-box p {
+        font-size: 0.9rem;
+    }
+}
+
+.custom-carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: var(--c-brand);
+    border: 2px solid var(--c-brand-light);
+    border-radius: 50%;  /* Circular shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-control-prev {
+    left: -40px;  /* Positioned slightly outside */
+}
+
+.carousel-control-next {
+    right: -40px;  /* Positioned slightly outside */
+}
+
+.custom-carousel-btn i {
+    color: white;
+    font-size: 22px;  /* Smaller icon to match new size */
+}
+
+.custom-carousel-btn:hover {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand);
+    transform: translateY(-50%) scale(1.1);  /* Subtle popup effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Softer shadow */
+}
+
+/*This is the timeline
+.timeline-container {
+    width: 90%;
+    max-width: 1500px;
+    position: relative;
+    margin: 50px auto; 
+    display: flex;   
+    justify-content: center; 
+    gap: 15px;   
+}
+
+.progress-path {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    border-radius: 3px;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.progress-glow {
+    height: 5px;
+    width: 0%;
+    background: linear-gradient(90deg, #FFD700, #6A0DAD);
+    border-radius: 3px;
+    transition: width 0.5s ease;
+}
+
+.milestone {
+    position: relative;
+    display: inline-block;
+    width: 16%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.milestone .circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #FFD700;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 4px solid #6A0DAD;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    margin: 0 auto 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.milestone:hover .circle,
+.milestone.active .circle {
+    transform: scale(1.2);
+    background-color: #6A0DAD;
+    color: #FFD700;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    bottom: 70px;
+    background-color: #6A0DAD;
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    width: 300px;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.milestone:hover .popup,
+.milestone.active .popup {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.popup h3 {
+    margin: 0 0 5px;
+    font-size: 2rem;
+    color: #FFD700;
+}
+
+.popup p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.instruction {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #6A0DAD;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { opacity: 0.6; }
+    to { opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.pulse-effect {
+    animation: pulse 1.2s ease-in-out 2;
+}
+
+@media (max-width: 768px) {
+    .timeline-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .milestone {
+        width: 30%;
+    }
+
+    .popup {
+        bottom: 60px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-path {
+        top: 0;
+        left: 50%;
+        width: 5px; 
+        height: 100%; 
+        transform: translateX(-50%);
+    }
+
+    .milestone {
+        width: 100%; 
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px; 
+    }
+
+    .circle {
+        width: 45px;
+        height: 45px;
+        margin-right: 15px; 
+    }
+
+    .popup {
+        position: static;  
+        width: 100%;       
+        text-align: left; 
+        padding: 15px;
+        transform: none;   
+        opacity: 1;        
+        display: block;   
+        background-color: rgba(31, 31, 31, 0.9);
+    }
+}
+*/
+
+
+/*End of Newly added stuff (-Aryan)*/
 
 #techstacks {
     padding: 0px;
@@ -152,16 +641,7 @@ h2{
 #home h1 span {
     position: relative;
     display: inline-block;
-    animation: flip 7s infinite;
-    animation-delay: calc(.6s * var(--i))
   }
-  @keyframes flip {
-    0%,80% {
-      transform: rotateY(360deg) 
-    }
-  }
-
-
 
 .image-container img {
     transition: opacity 0.3s ease; 
@@ -209,6 +689,7 @@ header {
 .timeline-item {
     width: 100%;
     margin-bottom: 70px;
+    margin-top: -50px;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
@@ -336,6 +817,7 @@ a:hover {
 
 #about .col-12 h1{
     font-size: 80px;
+    /* font-weight: 700; */
 }
 
 #quote .col-12 img{
@@ -349,24 +831,31 @@ a:hover {
     
     /* margin-left: 40px; */
 }
+
 #about .col-12 h2{
     font-size: 45px;
     
 }
-#about .col-lg-7 h2{
-    font-size: 39px;
+
+/* #about h2{
+    font-size: 24px;
+    color: grey;
     
 }
+#about h3{
+    font-size: 29px;
+} */
+
 .img-float{
     width: 100px;
 }
 
-.col-lg-7 h1{
+/* #about h1{
     
-    font-size: 60px;
+    font-size: 52px;
+    font-weight: 600;
     
-}
-
+} */
 
 .section-padding {
     padding-top: 100px;
@@ -417,9 +906,72 @@ a:hover {
 
 
 /* NAVBAR */
-.navbar {
+.nav-link {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;   
+    transition: transform 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #FFD700;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    transform: translateY(-3px);
+}
+
+.mobile-menu-backdrop {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .nav-link {
+        display: block;  
+        width: 100%;
+        text-align: center;
+    }
+}
+  /* @media (max-width: 1080px) {
+    .navbar-brand img {
+      height: 32px;
+      transition: 0.3 ease;
+    } */
+  /* }
+  @media (max-width: 540px) {
+    .navbar-brand img {
+      height: 24px;
+      transition: 0.3 ease;
+    }
+  } */
+/* .navbar {
     background-color: white;
     box-shadow: var(--box-shadow);
+    position: sticky !important;
 }
 
 .navbar-nav .nav-link {
@@ -474,7 +1026,7 @@ a:hover {
     position: relative;
     top: 20px;
     display: inline-block;
-    -webkit-animation: bounce 0.6s ease infinite alternate;
+    -webkit-animation: bounce 1s ease infinite alternate;
     
     color: #fff;
     
@@ -501,25 +1053,78 @@ a:hover {
   100% {
     transform: scale(1);
   }
+} */
+
+/* Button Container */
+.btn-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Buttons */
+.boton {
+    display: flex;
+    padding: 12px 20px;
+    gap: 10px; 
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #6A0DAD, #8A2BE2);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+
+/* Hover Effect */
+.boton:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #8A2BE2, #6A0DAD);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.boton:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 
 
-
 /* BTN */
-.btn {
-    font-weight: 700;
-    font-size: 30px;
-    /* text-transform: ; */
-    padding: 22px 34px;
-    border-radius: 13px;
+
+.btn, .btn-brand {
+    font-weight: 500;
+    font-size: 25px;
+    padding: 12px 24px;
+    border-radius: 25px; /* Slightly curvier corners */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft default shadow */
+    display: inline-block; /* Ensures buttons align properly */
+    vertical-align: middle; /* Aligns elements consistently */
+    margin-top: 10px; /* Standardized spacing */
+}
+
+.btn:hover, .btn-brand:hover {
+    transform: translateY(-3px); /* Popup effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+}
+
+.btn:active, .btn-brand:active {
+    transform: translateY(0); /* Natural press effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Back to default shadow */
 }
 
 .btn-brand {
     background-color: var(--c-brand);
     border-color: var(--c-brand);
     color: black;
-    /* text-shadow: 2px 2px 6px yellowgreen; */
 }
 
 .btn-brand:hover {
@@ -527,6 +1132,29 @@ a:hover {
     border-color: var(--c-brand-light);
     color: white;
 }
+
+
+/* .btn {
+    font-weight: 500;
+    font-size: 25px;
+    
+    padding: 12px 24px;
+    border-radius: 15px;
+    
+}
+
+.btn-brand {
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: black;
+    margin-top: 10px;
+}
+
+.btn-brand:hover {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: white;
+} */
 
 .float{
 	position:fixed;
@@ -592,20 +1220,80 @@ a:hover {
     position: relative;
     color: yellow;
 }
-#home .display-1{
-    font-size: 106px; 
+#home .display-1{ /*for home page big text */
+    font-size: 80px; 
     font-weight: 700;
+    text-align: left;
+    margin-top: 100px;
+    
 }
 
-
-
-#quote h1{
-    font-size: 90px;
+#frontholder{
+    margin-top: -75px;
+    margin-bottom: -75px;
 }
+
+#para{ /*for small descriptive text */
+    font-size: 25px;
+    color: black;
+    font-weight: 300; 
+}
+
+#para-dyn{
+    font-size: 25px;
+}
+
+#para2{
+    font-size: 25px;
+    text-align: left;
+}
+
+#subtext {  /*for small text just below lines*/
+    font-size: 25px;
+    color: gray;
+}
+
+#quote{ /*For big quotes and big texts*/
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+#quote .display-1{
+    font-size: 64px; 
+    font-weight: 700;
+    text-align: center;
+    margin-top: -75px;
+}
+
+.display-spec{ /*Same as Display-1 but for courses section and better margin*/
+    font-size: 75px; 
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.display-spec2{
+    font-size: 75px; 
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+
 #quote img{
     height: auto;
     width: 100%;
 }
+
+#about .display-1{ /*Big text in the classroom page */
+    font-size: 75px; 
+    font-weight: 700;
+    text-align: center;
+    margin-top: 250px;
+}
+
 /* #quote img{
     position: relative;
     
@@ -639,11 +1327,32 @@ a:hover {
    
 }
 
+.line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
 .section-title .line {
     width: 60px;
     height: 4px;
     background-color: var(--c-brand);
     margin: 16px auto 24px auto;
+}
+
+.section-title .line2 {
+    width: 625px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px 0;
+}
+
+.line3 {
+    width: 60px;
+    height: 3px;
+    background-color: gray;
+    margin: 16px auto 24px 0;
 }
 
 .section-title p {

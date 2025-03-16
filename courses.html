@@ -21,7 +21,7 @@
 
 <body >
     <div class="loader" >
-        <h1 class="text-center" data-aos="fade-up" data-aos-duration="1500"><i>Learn with us<br>we promise we’re not that boring</i></h1> &nbsp;&nbsp;
+        <h1 class="text-center" data-aos="fade-up" data-aos-duration="1000"><i>Learn with us<br>we promise we’re not that boring</i></h1> &nbsp;&nbsp;
         <!-- <h1 class="text-center" data-aos="fade-up" data-aos-duration="1100"><i>Courses </i></h1> -->
     </div>
     <a href="https://wa.me/918591113931?text=I%20would%20like%20to%20know%20more%20details%20about%20YellowGap%20Education%20Society" class="float" target="_blank">
@@ -29,9 +29,10 @@
         </a>
     <!-- <audio src="./assets/music/Sonny-Fodera-feat-Jazzy-DOD-Somedays-(RawPraise.ng).mp3" autoplay loop></audio> -->
 
-
+    <div id="includeNavbar"></div>
+    
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg sticky-top" x-data="{ open: false }">
+    <!-- <nav class="navbar navbar-expand-lg sticky-top" x-data="{ open: false }">
         <div class="container">
             <a class="navbar-brand" href="./index.html" >
                 <img src="./assets/images/YGLOGO.png" alt="">
@@ -65,30 +66,30 @@
                         <a class="nav-link" href="./contact.html" @click="open = !open">Contact</a>
                     </li>
                     <li>
-                    <!-- <a href="#contact" @click="open = false" class="btn btn-brand ms-lg-3 ">Book your slots</a> -->
+                     <a href="#contact" @click="open = false" class="btn btn-brand ms-lg-3 ">Book your slots</a>
                     </li>
                 </ul>
                 
             </div>
         </div>
-    </nav>
+    </nav> -->
     
     
 
     <section id="quote" class="section-padding">
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <div data-aos="zoom-in" data-aos-duration = "3000" class="col-12 text-center">
-                    <h1 > <span style="color: gold; text-shadow: 2px 2px 1px gray;">YellowGap</span> helps you go from coding noob to  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">Full-Stack</span> pro, no matter where you're starting! </h1>
+                <div data-aos="zoom-in" data-aos-duration = "1000" class="col-12 text-center">
+                    <h1 class="display-spec"> <span style="color: gold; text-shadow: 2px 2px 1px gray;">YellowGap</span> helps you go from coding noob to  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">Full-Stack</span> pro, no matter where you're starting! </h1>
                 </div>
     
-                <div class="col-12 text-center mt-4" data-aos="fade-up" data-aos-duration="3000">
+                <div class="col-12 text-center mt-4" data-aos="fade-up" data-aos-duration="1000">
                     <a href="https://wa.me/918591113931?text=I%20would%20like%20to%20know%20more%20details%20about%20YellowGap%20Education%20Society" class="btn btn-brand">Enroll Now</a> 
                 </div>
     
-                <div class="col-12 text-center mt-4">
-                    <img src="./assets/ImagesUpdated/94.webp" alt="" class="img-fluid" data-aos="zoom-out" data-aos-delay="450">
-                </div>
+                <!-- <div class="col-12 d-flex justify-content-center mt-4">
+                    <img src="./assets/ImagesUpdated/94.webp" alt="" class="img-fluid" data-aos="zoom-out" data-aos-delay="50">
+                </div> -->
             </div>
         </div>
     </section>
@@ -97,7 +98,8 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div data-aos="zoom-in" data-aos-duration = "1000" class="col-12 text-center">
-                    <h1 >Level 1: Getting  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">started</span> with tech </h1>
+                    <h1 id="quote" style="margin-top: 50px;">Level 1: Getting  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">started</span> with tech </h1>
+                    <p id="subtext">➡️ Hover over the milestones to see your journey!</p>
                 </div>
     
                
@@ -105,11 +107,206 @@
         </div>
     </section>
     
+    <div class="timeline-wrapper">
+        <div class="timeline-container">
+            <div class="progress-path">
+                <div class="progress-glow" id="progressGlow1"></div>
+            </div>
+            <div class="milestone" style="left: 0%;" data-heading="Computer Basics" data-text="Understand how your computer works, it's components, and how to use them effectively." data-target="infoBox1">1</div>
+            <div class="milestone" style="left: 25%;" data-heading="Internet and It's Workings" data-text="Learn how the internet connects everything, from websites to online services, and how it all functions together." data-target="infoBox1">2</div>
+            <div class="milestone" style="left: 50%;" data-heading="Web Development Basics" data-text="Get hands-on with creating your first website. You’ll learn the basics of HTML, CSS, and how to make your pages look good and work properly." data-target="infoBox1">3</div>
+            <div class="milestone" style="left: 75%;" data-heading="Programming Fundamentals" data-text="Start your coding journey by learning the fundamentals. You'll get familiar with basic programming concepts to build your first projects." data-target="infoBox1">4</div>
+            <div class="milestone" style="left: 100%;" data-heading="Linux & Scripting" data-text="Discover Linux, a powerful operating system used by professionals. Learn scripting to automate tasks and make your workflow more efficient." data-target="infoBox1">5</div>
+             <div class="info-box" id="infoBox1">
+                <h3>Computer Basics</h3>
+                <p>Understand how your computer works, it's components, and how to use them effectively.</p>
+            </div> 
+        </div>
+    </div>
 
-    
-    <section class="timeline">
+
+    <section id="quote" class="section-padding">
         <div class="container">
-          <!--     ITEM 1  -->
+            <div class="row justify-content-between align-items-center">
+                <div data-aos="zoom-in" data-aos-duration = "1000" class="col-12 text-center">
+                    <h1 id="quote" style="margin-top: 50px;">Level 2:  <span style="color: gold; text-shadow: 2px 2px 1px gray;">Knowledge</span> Expansion </h1>
+                    <p id="subtext">➡️ Hover over the milestones to see your journey!</p>
+                </div>
+    
+               
+            </div>
+        </div>
+    </section>
+    
+    <div class="timeline-wrapper">
+
+        <div class="timeline-container">
+            <div class="progress-path">
+                <div class="progress-glow" id="progressGlow2"></div>
+            </div>
+
+            <div class="milestone" style="left: 0%;" data-heading="Frontend Development" data-text="Learn how to design beautiful, interactive websites using HTML, CSS, and JavaScript to create stunning front-end experiences." data-target="infoBox2">1</div>
+            <div class="milestone" style="left: 16.6%;" data-heading="Backend Development" data-text="Discover how websites work behind the scenes. Learn how to manage databases, servers, and APIs to deliver dynamic content." data-target="infoBox2">2</div>
+            <div class="milestone" style="left: 33.2%;" data-heading="Database Management" data-text="Learn how to organize, store, and retrieve data efficiently. Understand the basics of databases and how they power modern websites." data-target="infoBox2">3</div>
+            <div class="milestone" style="left: 49.8%;" data-heading="Cloud & Hosting" data-text="Explore cloud platforms and how to host websites. Learn how to deploy your projects on the web and make them accessible to everyone." data-target="infoBox2">4</div>
+            <div class="milestone" style="left: 66.4%;" data-heading="Containerization" data-text="Learn how to use Docker to package your apps and their dependencies. Ensure consistency across different environments for smooth deployment." data-target="infoBox2">5</div>
+            <div class="milestone" style="left: 83%;" data-heading="DevOps" data-text="Understand the collaboration between developers and operations. Learn automation tools to streamline building, testing, and deployment processes." data-target="infoBox2">6</div>
+            <div class="milestone" style="left: 100%;" data-heading="Git, GitHub & Actions" data-text="Master version control with Git, collaborate on projects using GitHub, and automate your workflow with GitHub Actions to improve productivity." data-target="infoBox2">7</div>
+
+            <div class="info-box" id="infoBox2">
+                <h3>Frontend Development</h3>
+                <p>Learn how to design beautiful, interactive websites using HTML, CSS, and JavaScript to create stunning front-end experiences.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <section id="quote" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div data-aos="zoom-in" data-aos-duration = "1000" class="col-12 text-center">
+                    <h1 id="quote" style="margin-top: 50px;">Level 3: Mastering the  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">Craft</span></h1>
+                    <p id="subtext">➡️ Hover over the milestones to see your journey!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="timeline-wrapper">
+        <div class="timeline-container">
+            <div class="progress-path">
+                <div class="progress-glow" id="progressGlow3"></div>
+            </div>
+            <div class="milestone" style="left: 0%;" data-heading="APIs" data-text="Learn how APIs allow different applications to communicate with each other. Build and integrate APIs to enhance your projects functionality." data-target="infoBox3">1</div>
+            <div class="milestone" style="left: 14.3%;" data-heading="Data Structures & Algorithms (DSA)" data-text="Master key data structures and algorithms to optimize code for performance and tackle complex problems with ease." data-target="infoBox3">2</div>
+            <div class="milestone" style="left: 28.6%;" data-heading="Design Patterns" data-text="Learn about design patterns, the best practices for solving common coding problems. Use them to write efficient, maintainable code." data-target="infoBox3">3</div>
+            <div class="milestone" style="left: 42.9%;" data-heading="Security" data-text="Learn the essential techniques to protect your websites and applications from security breaches. Safeguard sensitive data and prevent attacks." data-target="infoBox3">4</div>
+            <div class="milestone" style="left: 57.2%;" data-heading="Web Performance" data-text="Optimize your website’s speed and performance to ensure a seamless user experience. Improve load times and boost your site’s efficiency." data-target="infoBox3">5</div>
+            <div class="milestone" style="left: 71.5%;" data-heading="Accessibility" data-text="Make your website accessible to everyone, including users with disabilities. Follow accessibility best practices to ensure an inclusive design." data-target="infoBox3">6</div>
+            <div class="milestone" style="left: 85.8%;" data-heading="UI/UX Design" data-text="Learn the principles of user interface (UI) and user experience (UX) design to create intuitive, visually appealing websites and apps." data-target="infoBox3">7</div>
+            <div class="milestone" style="left: 100%;" data-heading="System Design" data-text="Learn how to design scalable, reliable systems. Understand architectural decisions that support growth, performance, and efficiency in large projects." data-target="infoBox3">8</div>
+            <div class="info-box" id="infoBox3">
+                <h3>APIs</h3>
+                <p>Learn how APIs allow different applications to communicate with each other. Build and integrate APIs to enhance your projects functionality.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+            function setupTimeline(timelineIndex) {
+            const timelineContainer = document.querySelectorAll('.timeline-container')[timelineIndex - 1]; // Correct 1-based index
+            const milestones = timelineContainer.querySelectorAll('.milestone');
+            const progressGlow = document.getElementById(`progressGlow${timelineIndex}`);
+            const infoBox = document.getElementById(`infoBox${timelineIndex}`);
+
+            milestones.forEach((milestone) => {
+                milestone.addEventListener('mouseenter', () => {
+                    const progressPercentage = parseInt(milestone.style.left);
+                    progressGlow.style.width = `${progressPercentage}%`;
+
+                    const heading = milestone.getAttribute('data-heading');
+                    const text = milestone.getAttribute('data-text');
+
+                    infoBox.innerHTML = `<h3>${heading}</h3><p>${text}</p>`;
+                });
+            });
+
+            timelineContainer.addEventListener('mouseleave', () => {
+                progressGlow.style.width = '0%';
+                
+            });
+        }
+
+        setupTimeline(1);
+        setupTimeline(2);
+        setupTimeline(3);
+
+    </script>
+
+    <!-- <div class="timeline-container">
+    <div class="progress-path">
+        <div class="progress-glow" id="progressGlow"></div>
+    </div>
+
+    <div class="milestone" data-step="1">
+        <div class="circle pulse-effect">1</div>
+        <div class="popup">
+            <h3>Computer Basics</h3>
+            <p>Understand how your computer works, its components, and how to use them effectively.</p>
+        </div>
+    </div>
+
+    <div class="milestone" data-step="2">
+        <div class="circle">2</div>
+        <div class="popup">
+            <h3>Internet and It's Workings</h3>
+            <p>Learn how the internet connects everything, from websites to online services, and how it all functions together.</p>
+        </div>
+    </div>
+
+    <div class="milestone" data-step="3">
+        <div class="circle">3</div>
+        <div class="popup">
+            <h3>Web Development Basics</h3>
+            <p>Get hands-on with creating your first website. You’ll learn the basics of HTML, CSS, and how to make your pages look good and work properly.</p>
+        </div>
+    </div>
+
+    <div class="milestone" data-step="4">
+        <div class="circle">4</div>
+        <div class="popup">
+            <h3>Month 4 - Frontend Frameworks</h3>
+            <p>Explore React.js and build dynamic UI components.</p>
+        </div>
+    </div>
+
+    <div class="milestone" data-step="5">
+        <div class="circle">5</div>
+        <div class="popup">
+            <h3>Month 5 - Fullstack Mastery</h3>
+            <p>Integrate frontend and backend seamlessly.</p>
+        </div>
+    </div>
+
+    <div class="milestone" data-step="6">
+        <div class="circle">6</div>
+        <div class="popup">
+            <h3>Month 6 - Project & Deployment</h3>
+            <p>Build a complete app and deploy it online.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const milestones = document.querySelectorAll('.milestone');
+    const progressGlow = document.getElementById('progressGlow');
+
+    milestones.forEach((milestone, index) => {
+        milestone.addEventListener('mouseenter', () => {
+            const progressPercentage = ((index + 1) / milestones.length) * 100;
+            progressGlow.style.width = `${progressPercentage}%`;
+        });
+
+        // Add click support for mobile
+        milestone.addEventListener('click', () => {
+            milestones.forEach(m => m.classList.remove('active'));
+            milestone.classList.add('active');
+            const progressPercentage = ((index + 1) / milestones.length) * 100;
+            progressGlow.style.width = `${progressPercentage}%`;
+        });
+
+        // Pulse effect only on the first milestone
+        if (index === 0) {
+            milestone.querySelector('.circle').classList.add('pulse-effect');
+        }
+    });
+</script> -->
+    
+    <!-- <section class="timeline">
+        <div class="container">
+          
           <div class="timeline-item">
             <div class="timeline-img"></div>
       
@@ -119,7 +316,7 @@
             </div>
           </div> 
       
-          <!--     ITEM 2  -->
+          
            <div class="timeline-item">
             <div class="timeline-img"></div>
             <div class="timeline-content " data-aos="fade-down" data-aos-duration = "1000">
@@ -128,7 +325,7 @@
             </div>
           </div>   
       
-          <!--     ITEM 1  -->
+          
           <div class="timeline-item">
             <div class="timeline-img"></div>
       
@@ -138,7 +335,7 @@
             </div>
           </div> 
       
-          <!--     ITEM 2  -->
+          
            <div class="timeline-item">
             <div class="timeline-img"></div>
             <div class="timeline-content " data-aos="fade-down" data-aos-duration = "1000">
@@ -155,24 +352,11 @@
             </div>
           </div>   
         </div>
-      </section>
+      </section> -->
 
-
-      <section id="quote" class="section-padding">
+    <!-- <section class="timeline">
         <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div data-aos="zoom-in" data-aos-duration = "1000" class="col-12 text-center">
-                    <h1 >Level 2:  <span style="color: gold; text-shadow: 2px 2px 1px gray;">Expanding</span> Your Knowledge </h1>
-                </div>
-    
-               
-            </div>
-        </div>
-    </section>
-    
-    <section class="timeline">
-        <div class="container">
-            <!-- ITEM 1 -->
+           
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content" data-aos="zoom-in" data-aos-duration="1000">
@@ -181,7 +365,7 @@
                 </div>
             </div> 
     
-            <!-- ITEM 2 -->
+
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
@@ -189,8 +373,8 @@
                     <p>Discover how websites work behind the scenes. Learn how to manage databases, servers, and APIs to deliver dynamic content.</p>
                 </div>
             </div> 
-    
-            <!-- ITEM 3 -->
+     
+
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
@@ -199,7 +383,7 @@
                 </div>
             </div>
     
-            <!-- ITEM 4 -->
+       
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
@@ -208,7 +392,7 @@
                 </div>
             </div> 
     
-            <!-- ITEM 5 -->
+      
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
@@ -217,7 +401,7 @@
                 </div>
             </div> 
     
-            <!-- ITEM 6 -->
+            
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content " data-aos="fade-down" data-aos-duration = "1000">
@@ -226,7 +410,7 @@
                 </div>
             </div>
     
-            <!-- ITEM 7 -->
+           
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
@@ -235,23 +419,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section id="quote" class="section-padding">
+    <!-- <section class="timeline">
         <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div data-aos="zoom-in" data-aos-duration = "1000" class="col-12 text-center">
-                    <h1 >Level 3: Mastering the  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">Craft</span> </h1>
-                </div>
-    
-               
-            </div>
-        </div>
-    </section>
-    
-    <section class="timeline">
-        <div class="container">
-            <!-- ITEM 1 -->
+            
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
@@ -260,7 +432,7 @@
                 </div>
             </div> 
     
-            <!-- ITEM 2 -->
+           
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
@@ -269,7 +441,7 @@
                 </div>
             </div> 
     
-            <!-- ITEM 3 -->
+       
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
@@ -278,7 +450,7 @@
                 </div>
             </div>
     
-            <!-- ITEM 4 -->
+          
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
@@ -287,7 +459,7 @@
                 </div>
             </div> 
     
-            <!-- ITEM 5 -->
+      
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
@@ -296,7 +468,7 @@
                 </div>
             </div> 
     
-            <!-- ITEM 6 -->
+         
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
@@ -305,7 +477,7 @@
                 </div>
             </div>
     
-            <!-- ITEM 7 -->
+       
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content" data-aos="fade-down" data-aos-duration = "1000">
@@ -314,7 +486,7 @@
                 </div>
             </div> 
     
-            <!-- ITEM 8 -->
+           
             <div class="timeline-item">
                 <div class="timeline-img"></div>
                 <div class="timeline-content " data-aos="fade-down" data-aos-duration = "1000">
@@ -323,8 +495,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    
+    </section> -->
+
     
       
       
@@ -332,16 +504,16 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div data-aos="zoom-in" data-aos-duration = "1000" class="col-12 text-center">
-                    <h1 >If you're  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">curious</span> to learn more about  <span style="color: gold; text-shadow: 2px 2px 1px gray;">YellowGap</span> and how we can help you level up your  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">tech</span> skills, don't hesitate to  <span style="color: gold; text-shadow: 2px 2px 1px gray;">reach</span> out to us!</h1>
+                    <h1 id="quote" style="margin-top: 100px;">If you're  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">curious</span> to learn more about  <span style="color: gold; text-shadow: 2px 2px 1px gray;">YellowGap</span> and how we can help you level up your  <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">tech</span> skills, don't hesitate to  <span style="color: gold; text-shadow: 2px 2px 1px gray;">reach</span> out to us!</h1>
                 </div>
     
-                <div class="col-12 text-center mt-4" data-aos="fade-up" data-aos-duration="3000">
+                <div class="col-12 text-center mt-4" data-aos="fade-up" data-aos-duration="1000">
                     <a href="https://wa.me/918591113931?text=I%20would%20like%20to%20know%20more%20details%20about%20YellowGap%20Education%20Society" class="btn btn-brand">Enroll Now</a> 
                 </div>
     
-                <div class="col-12 text-center mt-4">
-                    <img src="./assets/ImagesUpdated/42.webp" alt="" class="img-fluid" data-aos="zoom-out" data-aos-delay="450">
-                </div>
+                <!-- <div class="col-12 text-center mt-4">
+                    <img src="./assets/ImagesUpdated/42.webp" alt="" class="img-fluid" data-aos="zoom-out" data-aos-delay="50">
+                </div> -->
             </div>
         </div>
     </section>
@@ -364,18 +536,18 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <script>
         $(function() {
-           $("#includeNavbar").load("/components/navbar.html");
+           $("#includeNavbar").load("./components/navbar.html");
         });
      </script>
 
 <script>
     $(function() {
-       $("#includeFooter").load("/components/footer.html");
+       $("#includeFooter").load("./components/footer.html");
     });
  </script>
 <script>
         $(function() {
-        $("#includeSlick").load("/components/slick.html");
+        $("#includeSlick").load("./components/slick.html");
         });
     </script>
 
