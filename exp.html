@@ -3,120 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Square Collage</title>
+    <title>Akash's Testimonial</title>
     <style>
         body {
             display: flex;
             height: 100vh;
+            background-color: #f3f3f3; /* Subtle background */
             justify-content: center;
             align-items: center;
-            background-color: #f0f0f0;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
 
-        .collage {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 5px;
-            width: 400px;
-            height: 400px;
-        }
-
-        /* IMAGE ZOOM */
-        .image-zoom {
+        .col-lg-7 {
             position: relative;
-            overflow: hidden;
+            background-color: #fffdf0; /* Paper-like background */
+            box-shadow: 
+                0 4px 8px rgba(0, 0, 0, 0.1),  /* Soft outer shadow */
+                0 15px 35px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            padding: 30px;
+            text-align: center;
+            transform: rotate(-2deg); /* Subtle tilt for realism */
+            
+            /* Paper texture effect */
+            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.95) 30%, rgba(235, 235, 235, 0.9) 100%);
         }
 
-        .image-zoom-wrapper {
-            overflow: hidden;
-            position: relative;
-        }
-
-        .image-zoom-wrapper img {
-            transition: 0.3s ease-in-out;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .image-zoom:hover .image-zoom-wrapper img {
-            transform: scale(1.1);
-        }
-
-        /* ICONBOX */
-        .iconbox {
-            background-color: #502C9D;
-            color: white;
+        .note-tape {
             position: absolute;
-            top: 40%;
+            top: -12px;
             left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0;
-            padding: 10px 15px;
-            border-radius: 50%;
-            font-size: 20px;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 28px;
+            background-color: #fbe28c; /* Warmer yellow tape */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            opacity: 0.8;
         }
 
-        .portfolio-item:hover .iconbox {
-            opacity: 1;
-            top: 50%;
+        #detes {
+            font-family: 'Patrick Hand', cursive; /* Handwritten style */
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 10px;
         }
 
-        /* Wide & Tall Image Adjustments */
-        .wide {
-            grid-column: span 2;
+        #subtext {
+            font-style: italic;
+            color: #555;
+            font-size: 1rem;
         }
 
-        .tall {
-            grid-row: span 2;
+        .line3 {
+            width: 40px;
+            height: 3px;
+            background-color: #e5c100;
+            margin: 10px auto 20px auto;
+        }
+
+        #para {
+            font-size: 1.2rem;
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <div class="collage">
-        <div class="portfolio-item image-zoom">
-            <div class="image-zoom-wrapper">
-                <img src="./assets/images/portfolio.jpg" alt="">
-            </div>
-            <div class="iconbox"><i class="ri-search-2-line"></i></div>
-        </div>
-
-        <div class="portfolio-item image-zoom wide">
-            <div class="image-zoom-wrapper">
-                <img src="./assets/images/portfolio3.jpg" alt="">
-            </div>
-            <div class="iconbox"><i class="ri-search-2-line"></i></div>
-        </div>
-
-        <div class="portfolio-item image-zoom">
-            <div class="image-zoom-wrapper">
-                <img src="./assets/images/portfolio4.jpg" alt="">
-            </div>
-            <div class="iconbox"><i class="ri-search-2-line"></i></div>
-        </div>
-
-        <div class="portfolio-item image-zoom">
-            <div class="image-zoom-wrapper">
-                <img src="./assets/images/portfolio5.jpg" alt="">
-            </div>
-            <div class="iconbox"><i class="ri-search-2-line"></i></div>
-        </div>
-
-        <div class="portfolio-item image-zoom tall">
-            <div class="image-zoom-wrapper">
-                <img src="./assets/images/portfolio6.jpg" alt="">
-            </div>
-            <div class="iconbox"><i class="ri-search-2-line"></i></div>
-        </div>
-
-        <div class="portfolio-item image-zoom">
-            <div class="image-zoom-wrapper">
-                <img src="./assets/images/portfolio7.jpg" alt="">
-            </div>
-            <div class="iconbox"><i class="ri-search-2-line"></i></div>
-        </div>
+    <div class="col-lg-7" data-aos="fade-down" data-aos-delay="50">
+        <div class="note-tape"></div>
+        <h1 id="detes">Hey I am Akash</h1>
+        <p id="subtext">Engineering Graduate mastering tech</p>
+        <div class="line3"></div>
+        <h2 id="para">
+            YellowGap made learning tech from scratch possible, 
+            <span style="color: gold; text-shadow: 1.5px 2px 1px rgba(160, 80, 0, 0.7);">
+                empowering
+            </span> 
+            me to build websites and explore new opportunities!
+        </h2>
     </div>
 </body>
 </html>

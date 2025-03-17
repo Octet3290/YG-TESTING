@@ -78,7 +78,8 @@ h2{
     /* margin-top: -100px; */
 }
 
-#detes-spec{
+#detes-spec{        /*Same as detes but center aligned*/
+    font-size: 70px;
     font-weight: 500;
     text-align: center;
     color: var(--c-dark);
@@ -111,7 +112,7 @@ h2{
     columns: gray;
 }
 
-.carousel-container { 
+.carousel-container {  /*Faculty text carousel*/
     width: 600px; 
     overflow: hidden; 
     position: relative; 
@@ -136,9 +137,9 @@ h2{
 }
 
 
-.ab-carousel-container {
+.ab-carousel-container { /*This is for the reviews carousel*/
     width: 100%;
-    height: 600px; /* Taller container for spacing */
+    height: 600px;
     overflow: hidden;
     /* position: relative; */
     border-radius: 20px;
@@ -170,7 +171,7 @@ h2{
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 15px;
-    transition: transform 0.75s ease, box-shadow 0.3s ease; /* Smooth transition */
+    transition: transform 0.75s ease, box-shadow 0.3s ease; 
 }
 
 .ab-carousel-item:hover {
@@ -197,15 +198,15 @@ h2{
 }
 
 .instructor-img {
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    border-radius: 12px; 
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
     margin-right: 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .instructor-img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+    transform: scale(1.05); 
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3); 
 }
 
 .timeline-wrapper {
@@ -215,7 +216,7 @@ h2{
     align-items: center;
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto;  /* Ensures timeline is centered */
+    margin: 0 auto;  
 }
 
 .timeline-container {
@@ -317,40 +318,81 @@ h2{
 }
 
 .custom-carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
+    position: absolute; 
+    top: 50%;            
+    transform: translateY(-50%); 
+    
+    width: 45px !important; 
+    height: 45px !important; 
+    border-radius: 50% !important;
+
     background-color: var(--c-brand);
-    border: 2px solid var(--c-brand-light);
-    border-radius: 50%;  /* Circular shape */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: none;
+    color: white;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
     cursor: pointer;
-    transition: all 0.3s ease;
-    z-index: 10;
-}
+    transition: background-color 0.3s ease, transform 0.2s ease;
 
-.carousel-control-prev {
-    left: -40px;  /* Positioned slightly outside */
-}
-
-.carousel-control-next {
-    right: -40px;  /* Positioned slightly outside */
+    padding: 0 !important;        
+    line-height: 1 !important;
 }
 
 .custom-carousel-btn i {
-    color: white;
-    font-size: 22px;  /* Smaller icon to match new size */
+    font-size: 24px;
 }
 
 .custom-carousel-btn:hover {
     background-color: var(--c-brand-light);
-    border-color: var(--c-brand);
-    transform: translateY(-50%) scale(1.1);  /* Subtle popup effect */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Softer shadow */
+    transform: translateY(-50%) scale(1.1); 
+}
+
+.paper-1 {
+    position: relative;
+    background-color: #aaa26d; 
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.1),  
+        0 15px 35px rgba(0, 0, 0, 0.15); 
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 30px;
+    text-align: center;
+    transform: rotate(-2deg); 
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.95) 30%, rgba(235, 235, 235, 0.9) 100%);
+}
+
+.paper-2 {
+    position: relative;
+    background-color: #aaa26d; 
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.1),  
+        0 15px 35px rgba(0, 0, 0, 0.15); 
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 30px;
+    text-align: center;
+    transform: rotate(2deg); 
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.95) 30%, rgba(235, 235, 235, 0.9) 100%);
+}
+
+
+.note-tape-1 {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 28px;
+    background-color: #fbe28c; /* Warmer yellow tape */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    opacity: 0.8;
 }
 
 /*This is the timeline
@@ -1261,11 +1303,11 @@ a:hover {
 
 }
 
-#quote .display-1{
+#quote .display-1{ /*Big text in the about section (confusing id names but thats just how it is)*/
     font-size: 64px; 
     font-weight: 700;
     text-align: center;
-    margin-top: -75px;
+    margin-top: 125px;
 }
 
 .display-spec{ /*Same as Display-1 but for courses section and better margin*/
@@ -1275,11 +1317,11 @@ a:hover {
     margin-top: 50px;
 }
 
-.display-spec2{
+.display-spec2{ /*Big text in faculty page*/
     font-size: 75px; 
     font-weight: 700;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 125px;
 }
 
 #quote img{
