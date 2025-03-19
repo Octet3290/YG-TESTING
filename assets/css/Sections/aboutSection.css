@@ -1,0 +1,41 @@
+#about img{
+    height: auto;
+    width: 100%; 
+    
+    /* margin-left: 40px; */
+}
+#about .col-12 h2{
+    font-size: 45px;
+    
+}
+#about h2{
+    font-size: 24px;
+    color: grey;
+    padding: 0 40px;
+    
+}
+#about h3{
+    font-size: 29px;
+    padding: 0 40px;
+}
+
+#about h4{
+    color: blueviolet; 
+    font-weight: 620; 
+    font-size: 20px; 
+    margin-left: 5px; 
+    /* margin-bottom: 20px; */
+    padding: 0 40px;
+}
+#about .col-12 h1{
+    font-size: 68px;
+    font-weight: 700;
+    
+}
+
+#about h1{
+    font-size: 52px;
+    font-weight: 600;
+    padding: 0 40px;
+    
+}

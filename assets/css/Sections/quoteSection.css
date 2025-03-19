@@ -1,0 +1,17 @@
+#quote h1{
+    font-size: 90px;
+    font-weight: 600;
+}
+#quote h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: #727272;
+}
+#quote img{
+    height: auto;
+    width: 100%;
+}
+#quote .col-12 img{
+    height: auto; 
+    width: 70%;
+}

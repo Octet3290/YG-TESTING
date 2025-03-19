@@ -1,0 +1,160 @@
+
+@media (max-width: 486px) {
+    body, html {
+        overflow-x: hidden; 
+        text-align: center;
+        
+    }
+
+     h2{
+        margin-bottom: 1.5rem;
+        
+    }
+    .tech-item {
+        font-size: 24px;
+    }
+    .slider-wrapper {
+        position: relative;
+        left: 0;
+        width: 100%;
+        z-index: 20;
+        padding: 10px 0;
+    }
+    .col-lg-7 h1 {
+        font-weight: 700;
+        font-size: 34px;
+     
+    }
+    #about .col-lg-7 h2{
+        font-size: 28px; 
+        
+    }
+
+    #about .col-lg-7 h2 span{
+        text-shadow: 2px 2px 1px gray;
+    }
+
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-img {
+        left: 30px;
+    }
+
+    .timeline-content {
+        width: 100%;
+        margin-left: 0;
+        float: left;
+    }
+
+    .timeline-item {
+        margin-bottom: 40px;
+    }
+
+    .timeline-item .timeline-content {
+        padding: 20px;
+    }
+    
+    #home .display-1 {
+        font-size: 45px; 
+      
+    }
+    #home .mb-5 {
+        font-size: 22px;
+    
+    }
+    .navbar-brand img{
+        max-width: 200px;
+        margin-right: 50px;
+        
+      
+    }
+    #about .col-12 h2{
+        font-size: 30px;
+        
+    }
+    #about .col-12 h1{
+        font-size: 50px;
+     
+    }
+    #quote .col-12 img{
+        height: auto; 
+        width: 100%;
+    }
+    #quote h1 {
+        font-size: 50px;
+   
+    }
+    .section-padding {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .section-title h1 {
+        font-size: 50px;
+    }
+    .section-title p {
+        font-size: 20px;
+    }
+    .carousel-inner h1{
+        font-size: 30px;
+    }
+    .carousel-inner img{
+        height: auto;
+        width: 100%;
+    }
+    .carousel-item .col-lg-7 h1{
+        display: flex;
+       margin-top: 0;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .col-lg-5  {
+        
+        order: 1;
+    }
+    .col-lg-7  {
+       
+        order: 2;
+    }
+    #quote img {
+        height: auto; 
+        width: 100%;
+        margin-bottom: 0;
+    }
+    #about img {
+        height: auto;
+        width: 100%; 
+        /* margin-bottom: 100px; */
+        /* margin-left: 10px; */
+    }
+    
+    
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        
+        
+    }
+    
+    .btn {
+        width: 100%; 
+    }
+    .typeform{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        
+         
+     }
+     footer{
+        text-align: left;
+       
+        
+     }
+    
+}

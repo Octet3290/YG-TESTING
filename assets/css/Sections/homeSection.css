@@ -1,0 +1,12 @@
+#home {
+    position: relative;
+    color: yellow;
+}
+#home .display-1{
+    font-size: 62px; 
+    font-weight: 700;
+}
+#home h2{
+    font-size: 22px;
+    color:  #727272
+}

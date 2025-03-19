@@ -1,0 +1,27 @@
+/* #quote img{
+    position: relative;
+    
+    transition: opacity 0.3s ease; 
+}
+#quote img:hover {
+    opacity: 0;
+}
+#quote .image-container {
+    position: relative;
+    
+    
+}
+
+#quote .image-container:hover {
+   
+    background-image: url('/assets/images/Scanner.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: auto; 
+    width: 100%; 
+}
+
+#quote .image-container img {
+    width: 100%;
+    height: auto;
+} */

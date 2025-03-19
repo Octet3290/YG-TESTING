@@ -1,0 +1,36 @@
+.navbar {
+    background-color: white;
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 400;
+    font-size: 18px;
+    margin-right: 25px;
+    color: var(--c-dark);
+    margin-top: 10px;
+}
+
+/* .navbar-nav .nav-link.active {
+    color: gold;
+} */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #FFD700;
+   
+  }
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  .nav-link:hover {
+    transform: translateY(-3px);
+  }
+.navbar-brand img {
+    max-width: 300px;
+
+}

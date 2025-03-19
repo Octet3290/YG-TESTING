@@ -1,0 +1,110 @@
+.display-spec{ /*Same as Display-1 but for courses section and better margin*/
+    font-size: 75px; 
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#quote{ /*For big quotes and big texts*/
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+#subtext {  /*for small text just below lines*/
+    font-size: 25px;
+    color: gray;
+}
+
+.timeline-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;  
+}
+
+.timeline-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.progress-path {
+    width: 105%;
+    height: 4px;
+    background: rgb(215, 211, 211);
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.progress-glow {
+    height: 6px;
+    width: 0%;
+    background: linear-gradient(90deg, gold, gold);
+    border-radius: 3px;
+    transition: width 0.5s ease;
+}
+
+.milestone {
+    position: absolute;
+    top: -25px;   
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: gold;
+    /* border: 3px solid #502C9D; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    text-align: center;
+}
+
+.milestone:hover {
+    transform: scale(1.2);
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.info-box {
+    background-color: #fff;
+    color: blueviolet;
+    /* border: 3px solid gold; */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    height: 200px;  
+    box-sizing: border-box;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    overflow: hidden; 
+    
+}
+
+.info-box h3 {
+    margin: 0 0 5px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #292930;
+}
+
+.info-box p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #757575;
+}
