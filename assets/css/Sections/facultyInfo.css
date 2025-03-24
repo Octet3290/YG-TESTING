@@ -9,9 +9,14 @@
     width: 60px;
     height: 4px;
     background-color: var(--c-brand);
+    /* margin: 16px auto 24px auto; */
+}
+.reviewline{
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
     margin: 16px auto 24px auto;
 }
-
 .section-title .line2 {
     width: 625px;
     height: 4px;

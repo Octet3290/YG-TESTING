@@ -1,20 +1,53 @@
 @media (min-width: 769px) and (max-width: 1038px) {
     body, html {
         overflow-x: hidden;
-       
+        
+    }
+    #about, #quote{
+        text-align: center;
+    }
+    .small-screen img{
+        display: block; 
+        margin-top: 20px;
+        height: auto;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .image-container{
+        display: none;
     }
     .navbar-nav .nav-link {
-        font-size: 22.5px;
+        font-size: 16px;
         margin-right: 4px;
+        
     }
+    
     #home .display-1 {
-        font-size: 80px;
+        font-size: 70px;
     }
     #home .mb-5 {
-        font-size: 40px;
+        font-size: 30px;
     }
     #about .col-12 h2{
         font-size: 40px;
+    }
+    #about .col-12 h1{
+        font-size: 60px;
+    }
+    #about h1{
+        font-size: 40px;
+        padding: 0 0px;
+    }
+    #about h2{
+        font-size: 26px;
+        padding: 0 0px;
+    }
+    #about h3{
+        font-size: 34px;
+        padding: 0 0px;
+    }
+    #about h4{
+        padding: 0 0px;
     }
     .timeline::before {
         left: 50%;

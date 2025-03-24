@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="./assets/css/Sections/quoteSection.css">
     <link rel="stylesheet" href="./assets/css/Functionality/HomeCarousel.css">
     <link rel="stylesheet" href="./assets/css/Functionality/timeline.css">
+    <link rel="stylesheet" href="./assets/css/Functionality/Form.css">
+    <link rel="stylesheet" href="./assets/css/Responsive/smallScreen.css">
+    <link rel="stylesheet" href="./assets/css/Responsive/smallMedScreen.css">
+    <link rel="stylesheet" href="./assets/css/Responsive/MediumScreen.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel = "stylesheet" href = "./pageTransition.css"> 
 
@@ -45,30 +49,64 @@
     <section id="about" class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center" data-aos="zoom-in" data-aos-duration="3000">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
                     <div class="section-title">
-                        <h1 >Reach out and let’s turn your <span style="color: gold; text-shadow: 2px 2px 1px gray;">tech</span> skills from 'Hello, World' to 'Im <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">Hired</span>'</h1>
-                        <div class="col-12 text-center mt-4" data-aos="fade-up" data-aos-delay="90">
-                            <a href="https://wa.me/918591113931?text=I%20would%20like%20to%20know%20more%20details%20about%20YellowGap%20Education%20Society" class="btn btn-brand">Contact Us</a> 
-                        </div>
-                       
+                        <h1><span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">Kickstart</span> Your Tech Journey!</h1>
+                        <div class="reviewline"></div>
+                        <p id="subtext">Don’t wait your coding journey starts here!</p>
                     </div>
                 </div>
-<!-- 
-                <div class="typeform" data-aos="fade-up" data-aos-duration="3000">
+            </div>
 
-                <div data-tf-live="01JK5NYZ5J0NXTP51DGA3BEDK8"></div>
-                <script src="//embed.typeform.com/next/embed.js"></script>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-5" data-aos="fade-down" data-aos-delay="50">
+                    <div class="container">
+                        <div class="form-box">
+                          <h3 class="text-center">Contact Us</h3>
+                          <p class="text-center">We'll get back to you shortly</p>
+                          <form id="contact-form" name="contact-form">
+                            <div class="form-group">
+                              <label for="name">Full Name</label>
+                              <input id="name" name="name" type="text" placeholder="John Doe" required />
+                            </div>
+                            <div class="form-group">
+                              <label for="email">Email Address</label>
+                              <input id="email" name="email" type="email"
+                           placeholder="your@email.com" required
+                           pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" />
+                                 
+                            </div>
+                            <div class="form-group">
+                              <label for="phone">Phone Number</label>
+                              <input id="phone" name="phone" type="tel" placeholder="0999999999" pattern="[0-9]{10}" maxlength="10" required />
+                            </div>
+                            <div class="form-group">
+                              <label for="message">Your Message</label>
+                              <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-brand">Send Message</button>
+                          </form>
+                        </div>
+                      </div>
+                </div>
+            
+                <div class="col-lg-7" data-aos="fade-down" data-aos-delay="90">
+                    <h4>We’re Here for You</h4>
+                    <h1>Get in <span style="color: gold; text-shadow: 2px 2px 1px gray;">touch</span> today</h1>
+                    <h3>Don't wait, let’s connect now!</h3>
+                    <h2>
+                        Have questions about our programs, need career guidance, or just want to have a conversation? We’re here to assist you every step of the way. Reach out today and start shaping your future in tech with us!
+                    </h2>
+                    <!-- <div data-aos="fade-up" data-aos-delay="90" class="col-12">
+                        <a href="./contact.html" class="btn btn-brand">Contact Us</a>
+                    </div> -->
+                </div>
+            </div>
+            
 
-                </div> -->
-
-             
-
-                
+            </div>
+            
         </div>
-        
-        </div>
-        
     </section>
 
     

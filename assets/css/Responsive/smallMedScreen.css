@@ -3,22 +3,62 @@
 @media (min-width: 487px) and (max-width: 768px) {
     body, html {
         overflow-x: hidden; 
-     
+        
+    }
+    #about, #quote{
+        text-align: center;
+    }
+    .small-screen img{
+        display: block; 
+        margin-top: 20px;
+        height: auto;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .image-container{
+        display: none;
+    }
+    #about{
+        padding: 0 0px;
+    }
+    #about h1{
+        font-size: 40px;
+        padding: 0 0px;
+    }
+    #about h2{
+        font-size: 20px;
+        padding: 0 0px;
+    }
+    #about h3{
+        font-size: 30px;
+        padding: 0 0px;
+    }
+    #about h4{
+        padding: 0 0px;
+    }
+    #quote{
+        padding: 0 0px;
     }
     #home{
         margin-top: 0;
     }
     #home .display-1 {
-        font-size: 70px; 
+        font-size: 60px; 
     }
     #home .mb-5 {
-        font-size: 36px;
+        font-size: 26px;
     }
     #quote h1 {
-        font-size: 55px;
+        font-size: 58px;
+        
+    }
+    #about .col-12 h1{
+        font-size: 47px;
+        padding: 0 0px;
     }
     #about .col-12 h2{
         font-size: 40px;
+        padding: 0 0px;
     }
     .timeline::before {
         left: 40px;
@@ -103,6 +143,7 @@
     }
     .btn {
         width: 100%;
+        margin-bottom: 60px;
     }
 
     .typeform{
