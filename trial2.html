@@ -234,16 +234,17 @@
         }
 
         .review-card-img { 
-            width: 200px; 
+            width: 200px !important; 
             height: 200px; 
             border-radius: 50%; 
             object-fit: cover; 
-            border: 5px solid gold; 
+            /* border: 1px solid gold;  */
             position: absolute; 
             top: -100px; 
             left: 50%; 
             transform: translateX(-50%);
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background-color: white;
         }
         
         .front-content-bottom { 
@@ -258,7 +259,7 @@
             font-weight: bold;
             transition: transform 0.2s ease, color 0.3s ease;
             position: absolute;
-            top: 50%;
+            top: 75%;
             transform: translateY(-50%);
         }
 
@@ -288,7 +289,7 @@
         }
 
         .swiper-pagination {
-            bottom: 300px !important; 
+            bottom: -50px !important; 
         }
 
 
@@ -408,7 +409,7 @@
                                 <h1 class="detes-spec3">Hey I am Akash</h1>
                                 <h4 id="subtext">Engineering Graduate mastering tech</h4>
                                 <div class="line"></div>
-                                <h3>This dude graduated as an engineer and mastered fullstack with us. Hover over to read his review</h3>
+                                <h2>This dude graduated as an engineer and mastered fullstack with us.</h2>
                             </div>
                         </div>
                     </div>
@@ -420,10 +421,10 @@
                                 <img class="review-card-img" src="../assets/ImagesUpdated/33.webp" alt="Rohan">
                             </div>
                             <div class="front-content-bottom">
-                                <h1 class="detes-spec3">Hey I am Rohan</h1>
-                                <h4 id="subtext">From beginner to pro developer</h4>
+                                <h1 class="detes-spec3">Hi! Alisha here</h1>
+                                <h4 id="subtext">Commerce Student to Full-Stack Developer</h4>
                                 <div class="line"></div>
-                                <h3>Started with zero coding experience and built full-stack apps with our training. Hover to read more.</h3>
+                                <h2>Started with zero coding experience and built full-stack apps with our training.</h2>
                             </div>
                         </div>
                     </div>
@@ -438,7 +439,7 @@
                                 <h1 class="detes-spec3">Hey I am Priya</h1>
                                 <h4 id="subtext">Data Science Enthusiast</h4>
                                 <div class="line"></div>
-                                <h3>Used our program to transition from engineering to data science. Now working as a data analyst!</h3>
+                                <h2>Used our program to transition from engineering to data science. Now working as a data analyst!</h2>
                             </div>
                         </div>
                     </div>
@@ -453,7 +454,7 @@
                                 <h1 class="detes-spec3">Hey I am Sanjay</h1>
                                 <h4 id="subtext">Fullstack Developer</h4>
                                 <div class="line"></div>
-                                <h3>Built multiple real-world projects with our program. Now working as a backend developer!</h3>
+                                <h2>Built multiple real-world projects with our program. Now working as a backend developer!</h2>
                             </div>
                         </div>
                     </div>
@@ -468,7 +469,7 @@
                                 <h1 class="detes-spec3">Hey I am Megha</h1>
                                 <h4 id="subtext">Software Engineer</h4>
                                 <div class="line"></div>
-                                <h3>Transformed from a student into a full-stack developer with confidence. Now coding at a top firm.</h3>
+                                <h2>Transformed from a student into a full-stack developer with confidence. Now coding at a top firm.</h2>
                             </div>
                         </div>
                     </div>
@@ -476,7 +477,7 @@
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
         </div>
     
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -3,19 +3,15 @@
         overflow-x: hidden;
         
     }
-    #about, #quote{
+    /* #about, #quote, #home{
         text-align: center;
-    }
+    } */
     .small-screen img{
-        display: block; 
-        margin-top: 20px;
-        height: auto;
-        width: 100%;
-        padding-bottom: 40px;
-    }
-    .image-container{
         display: none;
     }
+    /* .image-container{
+        
+    } */
     .navbar-nav .nav-link {
         font-size: 16px;
         margin-right: 4px;
@@ -23,10 +19,11 @@
     }
     
     #home .display-1 {
-        font-size: 70px;
+        font-size: 50px;
+        
     }
     #home .mb-5 {
-        font-size: 30px;
+        font-size: 20px;
     }
     #about .col-12 h2{
         font-size: 40px;
@@ -96,14 +93,14 @@
         width: 100%;
         margin-bottom: 0;
     }
-    .col-lg-5  {
+    /* .col-lg-5  {
         
         order: 1;
     }
     .col-lg-7  {
        
         order: 2;
-    }
+    } */
     #quote img {
         height: auto;
         width: 100%;
