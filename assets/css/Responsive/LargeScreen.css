@@ -1,4 +1,4 @@
-@media (min-width: 1039px) and (max-width: 1398px) {
+@media (min-width: 1039px) and (max-width: 1500px) {
     body, html {
         overflow-x: hidden;
         padding: 0 0px;
@@ -21,10 +21,14 @@
         
     } */
     .navbar-nav .nav-link {
-        font-size: 16px;
-        margin-right: 17px;
+        font-size: 18px;
+        margin-right: 8px;
         
     }
+    .navbar-brand img {
+        max-width: 250px;
+        margin-right: 40px;
+      }
     #home .display-1 {
         font-size: 50px;
     }

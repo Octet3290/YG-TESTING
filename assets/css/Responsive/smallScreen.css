@@ -181,4 +181,12 @@
         
      }
     
+     /* Faculty info */
+
+     .inst-caro-item h1 {
+        font-size: 20px;
+    }
+    .inst-caro-item h2 {
+        font-size: 14px;
+    }
 }

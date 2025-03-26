@@ -6,10 +6,12 @@
 .navbar-nav .nav-link {
   font-weight: 400;
   font-size: 18px;
-  margin-right: 25px;
+  margin-right: 5px;
   color: var(--c-dark);
   margin-top: 10px;
-  position: relative; 
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
   transition: transform 0.3s ease;
 }
 
@@ -36,5 +38,5 @@
   transform: translateY(-3px);
 }
 .navbar-brand img {
-  max-width: 300px;
+  max-width: 250px;
 }

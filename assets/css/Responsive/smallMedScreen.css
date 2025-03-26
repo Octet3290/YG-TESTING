@@ -15,9 +15,14 @@
         width: 100%;
         padding-bottom: 40px;
     }
+    
     .image-container{
         display: none;
     }
+    .navbar-brand img {
+        max-width: 190px;
+        margin-right: 50px;
+      }
     #about{
         padding: 0 0px;
     }
@@ -155,4 +160,33 @@
         
          
      }
+     /* Faculty info */
+     .carousel-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .inst-caro-item {
+        text-align: center;
+        padding:0 20px;
+    }
+    .inst-caro-item h1 {
+        font-size: 24px;
+    }
+    .inst-caro-item h2 {
+        font-size: 16px;
+    }
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .boton {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+    .dots-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
 }

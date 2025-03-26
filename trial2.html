@@ -22,12 +22,18 @@
     <link rel="stylesheet" href="./assets/css/Sections/facultyInfo.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/pageTransition.css">
+    <link rel="stylesheet" href="./assets/css/Responsive/smallScreen.css">
+    <link rel="stylesheet" href="./assets/css/Responsive/smallMedScreen.css">
+    <link rel="stylesheet" href="./assets/css/Responsive/MediumScreen.css">
+    <link rel="stylesheet" href="./assets/css/Responsive/LargeScreen.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />   
     <style>
         body {
             font-family: 'League Spartan';
         }
-
+        #about h2,h3,h4,h1{
+            padding: 0 0px !important;
+        }
         #quote .display-1{ /*Big text in the about section (confusing id names but thats just how it is)*/
             font-size: 64px; 
             font-weight: 700;
@@ -175,7 +181,7 @@
         } */
 
         .detes-spec3{
-            font-size: 40px;
+            font-size: 40px !important;
             font-weight: 600;
             text-align: center;
             color: var(--c-dark);
@@ -216,7 +222,7 @@
         .ab-carousel-item { 
             top: 15%;
             width: 500px; 
-            height: 500px;
+            height: 400px;
             background: #fff; 
             padding: 20px; 
             border-radius: 10px; 
@@ -296,16 +302,22 @@
     </style>
 </head>
 
-<body >
+<body>
+
+    <script src="./assets/js/pagetransition.js"></script>
+
+    <div id="preloader">
+        <img src="./assets/ImagesUpdated/giphy.gif" alt="Loading..." class="preloader-gif">
+    </div>
    
     <a href="https://wa.me/918591113931?text=I%20would%20like%20to%20know%20more%20details%20about%20YellowGap%20Education%20Society" class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
         </a>
 
 
-    <section id="about" class="section-padding">
+    <section id="about">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
                     <div class="section-title">
                         <h1 id="quote">From <span style="color: blueviolet; text-shadow: 2px 2px 1px gray;">Zero</span>  to Hero</h1>
@@ -313,7 +325,7 @@
                         <p>Master programming skills and create exceptional online user experiences.    </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
 
@@ -407,7 +419,7 @@
                             </div>
                             <div class="front-content-bottom">
                                 <h1 class="detes-spec3">Hey I am Akash</h1>
-                                <h4 id="subtext">Engineering Graduate mastering tech</h4>
+                                <h4 id="subtext">Engineering Graduate</h4>
                                 <div class="line"></div>
                                 <h2>This dude graduated as an engineer and mastered fullstack with us.</h2>
                             </div>
@@ -422,7 +434,7 @@
                             </div>
                             <div class="front-content-bottom">
                                 <h1 class="detes-spec3">Hi! Alisha here</h1>
-                                <h4 id="subtext">Commerce Student to Full-Stack Developer</h4>
+                                <h4 id="subtext">Commerce Student</h4>
                                 <div class="line"></div>
                                 <h2>Started with zero coding experience and built full-stack apps with our training.</h2>
                             </div>

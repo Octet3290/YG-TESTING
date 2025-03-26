@@ -5,11 +5,11 @@
     margin-top: 125px;
 }
 
-.line {
+.instructorline {
     width: 60px;
     height: 4px;
     background-color: var(--c-brand);
-    /* margin: 16px auto 24px auto; */
+    margin: 16px auto 24px auto;
 }
 .reviewline{
     width: 60px;
@@ -49,22 +49,21 @@
     font-size: 25px;
 }
 
-.carousel-container {  
+.carousel-container {
     position: relative;
-    /* background-color: #aaa26d;   */
-    /* box-shadow:  
-        0 3px 6px rgba(0, 0, 0, 0.1),  
+    /* background-color: #AAA26D;   */
+    /* box-shadow:
+        0 3px 6px rgba(0, 0, 0, 0.1),
         0 10px 25px rgba(0, 0, 0, 0.12);   */
-    border-radius: 10px;  
-    width: 600px; 
-    overflow: hidden;  
-    margin: 0 auto;  
-    padding: 5px;  
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 5px;
     text-align: center;
-    
-    background-image: radial-gradient(circle,  
-        rgba(255, 255, 255, 0.95) 30%,  
-        rgba(244, 241, 241, 0.9) 100%);  
+    background-image: radial-gradient(circle,
+        rgba(255, 255, 255, 0.95) 30%,
+        rgba(244, 241, 241, 0.9) 100%);
 }
 
 

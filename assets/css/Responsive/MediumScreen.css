@@ -3,6 +3,9 @@
         overflow-x: hidden;
         
     }
+    #home{
+        text-align: center;
+    }
     /* #about, #quote, #home{
         text-align: center;
     } */
@@ -10,13 +13,21 @@
         display: none;
     }
     /* .image-container{
-        
+        display: block; 
+        margin-top: 20px;
+        height: auto;
+        width: 100%;
+        padding-bottom: 40px;
     } */
     .navbar-nav .nav-link {
-        font-size: 16px;
+        font-size: 17px;
         margin-right: 4px;
-        
-    }
+        margin-bottom: 10px;
+      }
+      .navbar-brand img {
+        max-width: 230px;
+        margin-right: 50px;
+      }
     
     #home .display-1 {
         font-size: 50px;
@@ -142,4 +153,17 @@
          
      }
      
+}
+
+@media (min-width: 769px) and (max-width: 990px) {
+   .image-container{
+    display: none;
+   }
+     .small-screen img{
+        display: block; 
+        margin-top: 20px;
+        height: auto;
+        width: 100%;
+        padding-bottom: 40px;
+    } 
 }
