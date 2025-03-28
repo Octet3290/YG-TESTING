@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/Main/navbar.css">
     <link rel="stylesheet" href="./assets/css/Main/footer.css">
+    <link rel="stylesheet" href="./assets/css/Functionality/HomeCarousel.css">
     <link rel="stylesheet" href="./assets/css/Sections/aboutSection.css">
     <link rel="stylesheet" href="./assets/css/Sections/homeSection.css">
     <link rel="stylesheet" href="./assets/css/Sections/quoteSection.css">
@@ -81,39 +82,39 @@
                     
 
 
-                        <div class="carousel-container">
-                            <div class="carousel-content" id="carousel">
-                                <div class="inst-caro-item">
-                                    <h1 id="detes-spec">
-                                        Professional Experience
-                                    </h1>
+                        <div id="instructorCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <h1 id="detes-spec">Professional Experience</h1>
                                     <h4>with hands-on expertise in tech</h4>
-                                    <h2>
-                                        Tech guru with a Global impact, Harpreet has shaped future leaders across India, the US, and the UK. 
-                                        Always ahead of the industry, he's the Mentor you need!
-                                    </h2>
+                                    <h2>Tech guru with a Global impact, Harpreet has shaped future leaders across India, the US, and the UK. Always ahead of the industry, he's the Mentor you need!</h2>
                                 </div>
-                                <div class="inst-caro-item">
-                                    <h1 id="detes-spec" >Career Highlights</h1>
+                                <div class="carousel-item">
+                                    <h1 id="detes-spec">Career Highlights</h1>
                                     <h4>and key achievements in IT</h4>
-                                    <h2>AICTE Advisor, expert mentor, and a highly respected leader in the tech education space, dedicated to shaping the next Generation of tech professionals. </h2>
+                                    <h2>AICTE Advisor, expert mentor, and a highly respected leader in the tech education space, dedicated to shaping the next Generation of tech professionals.</h2>
                                 </div>
-                                <div class="inst-caro-item">
-                                    <h1 id="detes-spec" >Instructor Fun Facts</h1>
+                                <div class="carousel-item">
+                                    <h1 id="detes-spec">Instructor Fun Facts</h1>
                                     <h4>with humorous jokes</h4>
-                                    <h2 >When he's not shaping tech careers, Harpreet enjoys a good cup of coffee, pondering the mysteries of the universe... or maybe just enjoying a good book.</h2>
+                                    <h2>When he's not shaping tech careers, Harpreet enjoys a good cup of coffee, pondering the mysteries of the universe... or maybe just enjoying a good book.</h2>
                                 </div>
                             </div>
-                        </div>
-                        <div class="controls">
-                            <button class="boton prev" onclick="prevSlide()">&#9664;</button>
-                            <div class="dots-container">
-                                <span class="dot" onclick="goToSlide(0, 0)"></span>
-                                <span class="dot" onclick="goToSlide(0, 1)"></span>
-                                <span class="dot" onclick="goToSlide(0, 2)"></span>
+                            <div class="button-container">
+                                <button class="boton prev" type="button" data-bs-target="#instructorCarousel" data-bs-slide="prev">
+                                    <span aria-hidden="true">&#9664;</span>
+                                </button>
+                                <button class="boton next" type="button" data-bs-target="#instructorCarousel" data-bs-slide="next">
+                                    <span aria-hidden="true">&#9654;</span>
+                                </button>
                             </div>
-                            <button class="boton next" onclick="nextSlide()">&#9654;</button> 
+
+                            
                         </div>
+                        
+                    
+
+                       
                         
                       
                 </div>
@@ -140,39 +141,37 @@
                         <div class="line2"></div>
                         <h2 class="text-center">Deepak Yadav is all about cloud solutions and Kubernetes (maybe a little too much). As YellowGap's co-founder and a seasoned tech expert, he’s here to make sure you stay ahead!</h2>
                     
-                    <div class="carousel-container">
-                        <div class="carousel-content" id="carousel">
-                            <div class="inst-caro-item">
-                                <h1 id="detes-spec">
-                                    Professional Experience
-                                </h1>
-                                <h4>combined with practical expertise in tech</h4>
-                                <h2>
-                                    Tech guru with a Global impact, Harpreet has shaped future leaders across India, the US, and the UK. 
-                                    Always ahead of the industry, he's the Mentor you need!
-                                </h2>
-                            </div>
-                            <div class="inst-caro-item">
-                                <h1 id="detes-spec">Career Highlights</h1>
+
+                        <div id="instructortwoCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <h1 id="detes-spec">Professional Experience</h1>
+                                    <h4>combined with practical expertise in tech</h4>
+                                    <h2>Tech guru with a Global impact, Harpreet has shaped future leaders across India, the US, and the UK. 
+                                        Always ahead of the industry, he's the Mentor you need!</h2>
+                                </div>
+                                <div class="carousel-item">
+                                    <h1 id="detes-spec">Career Highlights</h1>
                                 <h4>and milestones across the years</h4>
                                 <h2>With 14+ years in tech, Deepak specializes in  architecture and performance optimization. And yes, he's probably already optimizing this page.</h2>
-                            </div>
-                            <div class="inst-caro-item">
-                                <h1 id="detes-spec">Instructor Fun Facts</h1>
+                                </div>
+                                <div class="carousel-item">
+                                    <h1 id="detes-spec">Instructor Fun Facts</h1>
                                 <h4>and their humorous talks</h4>
                                 <h2> Outside the classroom, Deepak loves hikings, experimenting with new cloud technologies, and winning at DevOps Quiz</h2>
+                                </div>
                             </div>
+                            <div class="button-container">
+                                <button class="boton prev" type="button" data-bs-target="#instructortwoCarousel" data-bs-slide="prev">
+                                    <span aria-hidden="true">&#9664;</span>
+                                </button>
+                                <button class="boton next" type="button" data-bs-target="#instructortwoCarousel" data-bs-slide="next">
+                                    <span aria-hidden="true">&#9654;</span>
+                                </button>
+                            </div>
+
+                            
                         </div>
-                    </div>
-                    <div class="controls">
-                        <button class="boton prev"onclick="prevSlide()">&#9664;</button> 
-                        <div class="dots-container">
-                            <span class="dot" onclick="goToSlide(1, 0)"></span>
-                            <span class="dot" onclick="goToSlide(1, 1)"></span>
-                            <span class="dot" onclick="goToSlide(1, 2)"></span>
-                        </div>
-                        <button class="boton next" onclick="nextSlide()">&#9654;</button> 
-                    </div>
                 </div>
                
             </div>

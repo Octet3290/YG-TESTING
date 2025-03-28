@@ -156,6 +156,24 @@
         
          
      }
+     .milestone {
+        position: absolute;
+        top: -25px;   
+        width: 50px;
+        height: 50px;
+        line-height: 40px;
+        border-radius: 50%;
+        background-color: gold;
+        
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s ease;
+        text-align: center;
+    }
      
 }
 
@@ -218,7 +236,7 @@
         line-height: 40px;
         border-radius: 50%;
         background-color: gold;
-        /* border: 3px solid #502C9D; */
+        
         color: white;
         display: flex;
         justify-content: center;
