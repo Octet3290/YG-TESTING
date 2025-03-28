@@ -37,6 +37,11 @@
     #about h4{
         font-size: 18px; 
         padding: 0 0px;
+      
+    }
+    #about .instructor-number{
+        
+        padding-top: 12px;
     }
 
     #about .col-lg-7 h2 span{
@@ -73,6 +78,7 @@
         font-size: 22px;
     
     }
+    
     .navbar-brand img{
         max-width: 200px;
         margin-right: 50px;

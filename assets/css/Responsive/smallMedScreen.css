@@ -41,6 +41,11 @@
     }
     #about h4{
         padding: 0 0px;
+        
+    }
+    #about .instructor-number{
+        
+        padding-top: 12px;
     }
     #quote{
         padding: 0 0px;

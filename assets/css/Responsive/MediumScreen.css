@@ -57,6 +57,10 @@
     #about h4{
         padding: 0 0px;
     }
+    #about .instructor-number{
+        
+        padding-top: 12px;
+    }
     .timeline::before {
         left: 50%;
         transform: translateX(-50%); 
@@ -141,7 +145,7 @@
         padding-right: 20px;
     }
     .btn {
-        /* width: 100%; */
+        width: 100%;
     }
     .typeform{
         display: flex;

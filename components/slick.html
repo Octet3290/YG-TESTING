@@ -7,9 +7,17 @@
   <style>
     .tech-marquee {
       /* width: min(1200px, 90vw); */
-      margin: 2rem auto;
+      /* margin: 2rem auto; */
       overflow: hidden;
       position: relative;
+      padding: 10px 0;
+      mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+    }
+    .tech-marquee-right{
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 10px;
       padding: 10px 0;
       mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
       -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
@@ -20,7 +28,7 @@
       white-space: nowrap;
       animation: marquee 170s linear infinite;
     }
-    .tech-marquee[reverse="true"] .tech-list {
+    .tech-marquee-right[reverse="true"] .tech-list {
       animation: marqueeReverse 170s linear infinite;
     }
     .tech-item {
@@ -49,26 +57,32 @@
     .tech-marquee .tech-item:hover {
       filter: grayscale(0);
     }
+    .tech-marquee-right:hover .tech-list {
+      animation-play-state: paused !important;
+    }
+    .tech-marquee-right .tech-item:hover {
+      filter: grayscale(0);
+    }
   </style>
 </head>
 <body>
   <div class="tech-marquee" id="marquee-left">
     <div class="tech-list" id="list-left"></div>
   </div>
-  <div class="tech-marquee" reverse="true" id="marquee-right">
+  <div class="tech-marquee-right" reverse="true" id="marquee-right">
     <div class="tech-list" id="list-right"></div>
   </div>
   <script>
     const leftTechnologies = [
       "API", "System Design", "Frontend", "Backend", "Database", "Algorithm", "Data structure", "HTTP", "REST", "GraphQL",
-      "Microservices", "Monolith", "Middleware", "DevOps", "CI/CD", "Containerization", "Docker", "Kubernetes", "Cloud computing", "Serverless",
+      "Microservices", "Monolith", "DevOps", "CI/CD", "Containerization", "Docker", "Kubernetes", "Cloud computing", "Serverless",
       "Edge Computing", "Reverse Engineering", "Code Refactoring", "Technical Debt", "Proxy", "Load Balancing", "Caching", "Reverse Proxy",
       "Authentication", "Authorization", "OAuth", "JWT", "Encyption", "Hashing", "SQL", "NoSQL", "ORM", "Query Optimization", "Indexing",
       "Sharding", "Replication", "Event-Driven Architecture", "Message Queue", "WebSocket", "AJAX", "API Gateway", "Rate Limiting",
       "Content Delivery Network (CDN)", "Infrastructure as Code (IaC)", "JSON"
     ];
     const rightTechnologies = [
-      "XML", "Session", "Cookie", "Token", "Middleware", "Framework", "Library", "SDK", "Version Control", "Git",
+      "Cookie", "Token", "Middleware", "Framework", "Library", "SDK", "Version Control", "Git",
       "Branching", "Merge Conflict", "Code Review", "Linter", "Debugging", "Unit Testing", "Integration Testing", "Regression Testing",
       "Test-Driven Development (TDD)", "Behavior-Driven Development (BDD)", "Graph", "Linked List", "Hash Table", "Web Crawler",
       "Dependency Injection", "Singleton Pattern", "Factory Pattern", "Observer Pattern", "MVC", "MVVM", "SSR (Server-Side Rendering)",

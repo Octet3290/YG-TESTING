@@ -129,6 +129,15 @@
     font-weight: 300; 
     text-align: center;
 }
+.button-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    position: absolute;
+    top: 50%;
+    width: 100%; 
+    transform: translateY(-50%); 
+}
 
 .boton {    
     display: flex;

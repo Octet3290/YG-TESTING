@@ -1,6 +1,7 @@
 footer {
     padding-top: 120px;
-   
+    font-size: 23px !important;
+    letter-spacing: -0.6px !important;
 }
 
 .footer-top {
