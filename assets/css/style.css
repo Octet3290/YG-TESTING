@@ -63,6 +63,11 @@ h2{
 }
 
 
+#home .container {
+    position: relative;
+    z-index: 2;
+}
+
 .main-image {
     width: 100%;
     /* left: 40%;

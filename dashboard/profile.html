@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Edit Profile</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
-
   <script>
     function showTab(tabId) {
       ['basic', 'summary', 'career'].forEach(id => {
@@ -18,32 +16,23 @@
     }
   </script>
 </head>
-
-
-
 <body class="bg-yellow-50 font-sans p-4">
   <div class="max-w-4xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
-    
     <header class="bg-yellow-100 p-4 text-center font-bold text-xl">
       Edit Profile
     </header>
-
     <div class="flex flex-col md:flex-row">
-      
       <aside class="bg-yellow-200 p-6 w-full md:w-1/3 text-center">
         <img src="" class="mx-auto rounded-full mb-4" />
         <h2 class="font-semibold">Aryan Trimbakkar</h2>
         <p class="text-sm text-gray-600">aryan.trimbakkar@yellowgap.com</p>
       </aside>
-
       <main class="w-full md:w-2/3 p-6">
-        
         <div class="flex space-x-4 border-b mb-4 text-sm">
           <button id="tab-basic" onclick="showTab('basic')" class="pb-2 border-b-2 border-yellow-500 text-yellow-600">Basic Details</button>
           <button id="tab-summary" onclick="showTab('summary')" class="pb-2">Summary</button>
           <button id="tab-career" onclick="showTab('career')" class="pb-2">Career Journey</button>
         </div>
-
         <div id="basic">
           <h3 class="font-semibold mb-2">Personal Details</h3>
           <div class="grid grid-cols-1 gap-4">
@@ -53,12 +42,10 @@
             <input class="p-2 border rounded" placeholder="LinkedIn URL" />
           </div>
         </div>
-
         <div id="summary" class="hidden">
           <h3 class="font-semibold mb-2">Summary</h3>
           <textarea class="w-full p-2 border rounded" placeholder="Tell us who you are"></textarea>
         </div>
-
         <div id="career" class="hidden">
           <h3 class="font-semibold mb-2">Career Journey</h3>
           <select class="p-2 border rounded w-full mb-2">
@@ -66,12 +53,10 @@
           </select>
           <input class="p-2 border rounded w-full" placeholder="Add milestone" />
         </div>
-
         <div class="mt-4 flex justify-end space-x-2">
           <button class="px-4 py-2 bg-gray-200 rounded">Cancel</button>
           <button class="px-4 py-2 bg-yellow-500 text-white rounded">Save</button>
         </div>
-
       </main>
     </div>
   </div>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YellowGap Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .tab-content { display: none; }
+      .tab-content.active { display: block; }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <div class="flex flex-col lg:flex-row min-h-screen">
+  
+      <aside class="w-full lg:w-64 bg-white shadow-md flex flex-col justify-between border-r">
+        <div>
+          <div class="p-6 text-3xl font-bold text-gray-900 text-center lg:text-left">
+            <span class="text-black">Yellow</span><span class="text-yellow-400">|Gap</span>
+          </div>
+          <nav class="space-y-2 px-4">
+            <button class="flex items-center w-full py-2 px-4 bg-yellow-400 text-black rounded-md font-medium">
+              <span class="mr-2"></span> Home
+            </button>
+            <button class="flex items-center w-full py-2 px-4 bg-white hover:bg-yellow-100 text-black rounded-md font-medium">
+              <span class="mr-2"></span> Assignments
+            </button>
+            <button class="flex items-center w-full py-2 px-4 bg-yellow-400 text-black rounded-md font-medium">
+              <span class="mr-2"></span> Community
+            </button>
+          </nav>
+        </div>
+      </aside>
+
+ 
+      <main class="flex-1 p-4 sm:p-6">
+ 
+        <div class="flex flex-col sm:flex-row items-center justify-between mb-4 gap-4">
+          <div class="relative w-full sm:w-1/2">
+            <input type="text" placeholder="Search" class="w-full pl-10 pr-4 py-2 rounded-full bg-yellow-100 border border-yellow-200 focus:outline-none" />
+            <span class="absolute left-3 top-2.5 text-yellow-800"></span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span></span>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" class="sr-only peer">
+              <div class="w-11 h-6 bg-yellow-300 peer-focus:outline-none rounded-full peer dark:bg-yellow-600"></div>
+            </label>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+      
+        <h2 class="font-semibold italic text-lg mb-3">Breaking News: Yellow Gap Edition</h2>
+
+
+        <div class="overflow-auto">
+          <div class="w-full border-t border-gray-200">
+            <div class="flex items-center px-4 py-2 border-b text-sm font-medium">
+              <input type="checkbox" class="mr-3" id="selectAll">
+              <label for="selectAll">Select all</label>
+              <div class="ml-auto text-gray-500 cursor-pointer hover:text-red-500">
+                
+              </div>
+            </div>
+
+
+
+            <div class="divide-y">
+              <div class="flex items-start sm:items-center bg-yellow-100 px-4 py-3">
+                <input type="checkbox" class="mr-3">
+                <span class="mr-3"></span>
+                <p class="text-sm"><strong>New DSA course released</strong> – Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore<br><span class="text-xs text-gray-600">9 a.m</span></p>
+              </div>
+              <div class="flex items-start sm:items-center bg-yellow-200 px-4 py-3">
+                <input type="checkbox" class="mr-3">
+                <span class="mr-3"></span>
+                <p class="text-sm"><strong>Shivaji Jayanti Holiday</strong> – There will be no classes on Wednesday 19th Feb on the occasion of Shivaji Jayanti<br><span class="text-xs text-gray-600">Feb 17th 5 p.m</span></p>
+              </div>
+              <div class="flex items-start sm:items-center bg-yellow-100 px-4 py-3">
+                <input type="checkbox" class="mr-3">
+                <span class="mr-3"></span>
+                <p class="text-sm"><strong>Reminder Assignment submission</strong> – Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br><span class="text-xs text-gray-600">9 a.m</span></p>
+              </div>
+              <div class="flex items-start sm:items-center bg-yellow-200 px-4 py-3">
+                <input type="checkbox" class="mr-3">
+                <span class="mr-3"></span>
+                <p class="text-sm"><strong>Shivaji Jayanti Holiday</strong> – There will be no classes on Wednesday 19th Feb on the occasion of Shivaji Jayanti<br><span class="text-xs text-gray-600">Feb 17th 5 p.m</span></p>
+              </div>
+              <div class="flex items-start sm:items-center bg-yellow-100 px-4 py-3">
+                <input type="checkbox" class="mr-3">
+                <span class="mr-3"></span>
+                <p class="text-sm"><strong>Reminder Assignment submission</strong> – Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br><span class="text-xs text-gray-600">9 a.m</span></p>
+              </div>
+              <div class="flex items-start sm:items-center bg-yellow-200 px-4 py-3">
+                <input type="checkbox" class="mr-3">
+                <span class="mr-3"></span>
+                <p class="text-sm"><strong>Lorem ipsum</strong> – consectetur adipiscing elit, sed do eiusmod tempor incididunt<br><span class="text-xs text-gray-600">Feb 17th 5 p.m</span></p>
+              </div>
+              <div class="flex items-start sm:items-center bg-yellow-100 px-4 py-3">
+                <input type="checkbox" class="mr-3">
+                <span class="mr-3"></span>
+                <p class="text-sm"><strong>Reminder Assignment submission</strong> – Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br><span class="text-xs text-gray-600">9 a.m</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
